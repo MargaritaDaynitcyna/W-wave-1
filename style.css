@@ -1,0 +1,50 @@
+p{
+    margin: 0;
+  }
+  img {
+    width: 48px;
+  height: 48px;
+  }
+  .podcasts__item {
+  width: 540px;
+  height: 140px;
+  outline: 1px solid red;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 112px 1fr;
+  grid-template-rows: 1fr 32px;
+  }
+  .podcasts__foto {
+      position: relative;
+      width: 112px;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    background-image: url('https://avatars.mds.yandex.net/get-pdb/1920338/60d93b87-947e-4dea-9b55-28f319726d56/s1200');
+  grid-row: 1/3;
+  }
+  
+  .podcasts__info {
+  padding: 24px 30px;
+  display: flex;
+      justify-content: space-between;
+  }
+  
+  .podcasts__foto:after {
+  content: '14 июня';
+      position: absolute;
+  width: 39px;
+  height: 10px;
+  padding: 3px 6px;
+  left: 0px;
+  top: 124px;
+  font-size: 10px;
+  line-height: 10px;
+  background: #E6E8EC;
+      color: black;
+  }
+  .info_top {
+    position: absolute;
+    width: 176px;
+    height: 60px;
+  }
