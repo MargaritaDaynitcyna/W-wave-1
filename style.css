@@ -5,8 +5,19 @@ p{
     width: 48px;
   height: 48px;
   }
+
+  .podcasts__list {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+
+  }
   .podcasts__item {
-  width: 540px;
+  width: 100%;
   height: 140px;
   outline: 1px solid red;
   display: grid;
@@ -20,8 +31,8 @@ p{
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-    background-image: url('https://avatars.mds.yandex.net/get-pdb/1920338/60d93b87-947e-4dea-9b55-28f319726d56/s1200');
-  grid-row: 1/3;
+      background-image: url('https://avatars.mds.yandex.net/get-pdb/1920338/60d93b87-947e-4dea-9b55-28f319726d56/s1200');
+      grid-row: 1/3;
   }
   
   .podcasts__info {
@@ -47,4 +58,83 @@ p{
     position: absolute;
     width: 176px;
     height: 60px;
+  }
+
+  .podcasts__action {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px 10px 6px 30px;
+  }
+  .played__icon, .liked__icon, .shared__icon {
+    width: 13px;
+    height: 12px;
+  }
+  .played__num, .liked__num, .shared__num {
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+  .header1 {
+    display: grid;
+    height: 40px;
+    padding: 20px 0;
+    grid-template-columns: 15% 1fr 14%;
+    gap: 80px;;
+  }
+  .nav__close, .burger {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 36px;
+    list-style: none;
+    padding: 0;
+  }
+  .header2 {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 31.5% 46px;
+    gap: 52px;  
+  }
+
+  .air {
+    display: flex;
+  }
+  .air__early, .air__now {
+    display: flex;
+    width: 50%;
+  }
+
+  .early__icon, .now__icon{
+    width: 20px;
+    height: 20px;
+  }
+
+  .age {
+background-color: grey;
+  }
+  .circle{
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 8px;
+    font-size: 12px;
   }
