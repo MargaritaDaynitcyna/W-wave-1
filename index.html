@@ -13,11 +13,12 @@
 
 
   <header class="header">
-    <div class="container header__container">
+    
       <div class="header1">
+        <div class="container header__container">
         <div class="header__logo">
           <a href="" class="logo">
-            <img src="./img/" alt="Логотип" class="logo__img">
+            <img src="./img/logo.png" alt="Логотип" class="logo__img">
           </a>
         </div>
         <div class="header__nav">
@@ -44,9 +45,10 @@
         <div class="sl">
           <div class="header__search">
             <button id="searchBtn" name="search" class="search__btn">
-              <svg class="search__icon" viewbox=" 0 0 25 25 ">
+              <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
                 <use xlink:href="#search"></use>
-              </svg>
+              </svg> -->
+              <img src="img/search.svg" alt="">
             </button>
           </div> 
           <div class="header__login">
@@ -55,6 +57,7 @@
             </button>
           </div> 
         </div>
+      </div>
       </div>
       <div class="header2">
         <nav id="" class="nav">
@@ -69,17 +72,17 @@
         </nav>
         <div class="air">
           <div class="air__early">
-            <img class="early__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
+            <img class="early__icon" src="img/play_header_btn.svg" alt="">
             <div class="early__info">
               <p class="early__title">Ранее в эфире</p>
               <p class="early__text">«Музыка»</p>
             </div>
           </div>
           <div class="air__now">
-            <img class="now__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
+            <img class="now__icon" src="img/play_header_btn.svg" alt="">
             <div class="now__info">
-              <p class="now__title">Ранее в эфире</p>
-              <p class="now__text">«Музыка»</p>
+              <p class="now__title">Сейчас в эфире</p>
+              <p class="now__text">«Как так?»</p>
             </div>
           </div>
         </div>
@@ -87,72 +90,204 @@
            <div class="circle">12+</div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </header>
 
-  <ul class="podcasts__list">
-    <li class="podcasts__item">
-      <div class="podcasts__foto project__foto-1">
-      </div>
-      <div class="podcasts__info">
-        <div class="info_l">
-          <p>15:43</p>
-          <p>Европа. XIX век</p>
-          <p>Дмитрий Гутенберг</p>
+  <main>
+    <section class="main">
+      <div class="container main__container">
+        <div class="hero">
+          <h1 class="hero__title">
+            Радио W-Wawe
+          </h1>
+          <p class="hero__text">
+            Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. 
+            Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — 
+            архив передач и многое другое:)
+          </p>
+          <a href="#" role="button" class="btn hero__btn">Слушать эфир</a>
         </div>
-        <div class="info_r">
-          <img
-            src="https://w7.pngwing.com/pngs/495/349/png-transparent-computer-icons-button-symbol-google-play-play-angle-service-triangle.png"
-            alt="">
+        <div class="mic">
+          <img src="./img/microphone.png" alt="">
         </div>
       </div>
-      <ul class="podcasts__action">
-        <li class="action__played">
-          <img class="played__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="played__num">258</span>
-        </li>
-        <li class="action__liked">
-          <img class="liked__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="liked__num">258</span>
-        </li>
-        <li class="action__shared">
-          <img class="shared__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="shared__num">258</span>
-        </li>
-      </ul>
-    </li>
+    </section>
+    
+    <section class="podcasts">
+      <div class="container podcasts__container">
+        <h2 class="podcasts__title">
+          Подкасты
+        </h2>
+        <ul class="podcasts__list">
+          <li class="podcasts__item">
+            <div class="podcasts__foto project__foto-1">
+            </div>
+            <div class="podcasts__info">
+              <div class="info_l">
+                <p>15:43</p>
+                <p>Европа. XIX век</p>
+                <p>Дмитрий Гутенберг</p>
+              </div>
+              <div class="info_r">
+                <img
+                  src="img/play_btn.svg"
+                  alt="">
+              </div>
+            </div>
+            <ul class="podcasts__action">
+              <li class="action__played">
+                <img class="played__icon" src="img/played.svg" alt="">
+                <span class="played__num">258</span>
+              </li>
+              <li class="action__liked">
+                <img class="liked__icon" src="img/liked.svg" alt="">
+                <span class="liked__num">258</span>
+              </li>
+              <li class="action__shared">
+                <img class="shared__icon" src="img/share.svg" alt="">
+                <span class="shared__num">258</span>
+              </li>
+            </ul>
+          </li>
+      
+          <li class="podcasts__item">
+            <div class="podcasts__foto project__foto-1">
+            </div>
+            <div class="podcasts__info">
+              <div class="info_l">
+                <p>15:43</p>
+                <p>Европа. XIX век</p>
+                <p>Дмитрий Гутенберг</p>
+              </div>
+              <div class="info_r">
+                <img
+                  src="img/play_btn.svg"
+                  alt="">
+              </div>
+            </div>
+            <ul class="podcasts__action">
+              <li class="action__played">
+                <img class="played__icon" src="img/played.svg" alt="">
+                <span class="played__num">258</span>
+              </li>
+              <li class="action__liked">
+                <img class="liked__icon" src="img/liked.svg" alt="">
+                <span class="liked__num">258</span>
+              </li>
+              <li class="action__shared">
+                <img class="shared__icon" src="img/share.svg" alt="">
+                <span class="shared__num">258</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <li class="podcasts__item">
-      <div class="podcasts__foto project__foto-1">
-      </div>
-      <div class="podcasts__info">
-        <div class="info_l">
-          <p>15:43</p>
-          <p>Европа. XIX век</p>
-          <p>Дмитрий Гутенберг</p>
+    <section class="broadcasts">
+      <div class="container broadcasts__container">
+        <div class="broadcasts__info">
+          <h2 class="broadcasts__title">
+            Передачи
+          </h2>
+          <div class="broadcasts__select">
+            <p class="select__autor">
+              Автор:
+            </p>
+            <select class="select__select" name="select">
+              <option value="value1" selected>Дмитрий Гутенберг</option>
+              <option value="value2">Татьяна Флеганова</option>
+              <option value="value3">Анна Васильева</option>
+              <option value="value3">Пётр Дмитриевский</option>
+            </select>
+          </div>
         </div>
-        <div class="info_r">
-          <img
-            src="https://w7.pngwing.com/pngs/495/349/png-transparent-computer-icons-button-symbol-google-play-play-angle-service-triangle.png"
-            alt="">
+        <div class="broadcasts__archive">
+          <img class="archive__img" src="/img/mic.png" alt="">
+          <button id="" name="login" class="login__btn">
+            <span><img src="/img/layers.svg" alt=""></span>
+            Архив
+          </button>
+          <p class="archive__desc">
+            В архив попадают все передачи, которые вы пропустили! Enjoy:)
+          </p>
         </div>
+        <ul class="broadcasts__cards">
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <div class="card__info">
+              <p class="card__title">О людях и книгах</p>
+              <p class="card__desc">Анонсируется отдельно</p>
+              <a href="" class="card__link">
+                Подробнее
+                <span class="card__link-arrow">
+                  <img src="./img/arrow.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <p class="card__title">О людях и книгах</p>
+            <p class="card__desc">Анонсируется отдельно</p>
+            <p class="card__link">
+              Подробнее
+              <span class="card__link-arrow">
+                <img src="./img/arrow.svg" alt="">
+              </span>
+            </p>
+          </li>
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <p class="card__title">О людях и книгах</p>
+            <p class="card__desc">Анонсируется отдельно</p>
+            <p class="card__link">
+              Подробнее
+              <span class="card__link-arrow">
+                <img src="./img/arrow.svg" alt="">
+              </span>
+            </p>
+          </li>
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <p class="card__title">О людях и книгах</p>
+            <p class="card__desc">Анонсируется отдельно</p>
+            <p class="card__link">
+              Подробнее
+              <span class="card__link-arrow">
+                <img src="./img/arrow.svg" alt="">
+              </span>
+            </p>
+          </li>
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <p class="card__title">О людях и книгах</p>
+            <p class="card__desc">Анонсируется отдельно</p>
+            <p class="card__link">
+              Подробнее
+              <span class="card__link-arrow">
+                <img src="./img/arrow.svg" alt="">
+              </span>
+            </p>
+          </li>
+          <li class="card cards__item">
+            <img class="card__img" src="./img/broadcast1.png" alt="">
+            <p class="card__title">О людях и книгах</p>
+            <p class="card__desc">Анонсируется отдельно</p>
+            <p class="card__link">
+              Подробнее
+              <span class="card__link-arrow">
+                <img src="./img/arrow.svg" alt="">
+              </span>
+            </p>
+          </li>
+        </ul>
       </div>
-      <ul class="podcasts__action">
-        <li class="action__played">
-          <img class="played__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="played__num">258</span>
-        </li>
-        <li class="action__liked">
-          <img class="liked__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="liked__num">258</span>
-        </li>
-        <li class="action__shared">
-          <img class="shared__icon" src="https://img.icons8.com/ios/500/like--v1.png" alt="">
-          <span class="shared__num">258</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
+    </section>
+
+  </main>
+
+  
 </body>
 
 </html>
