@@ -1,5 +1,6 @@
-p, ul, h1, h2{
+p, ul,li h1, h2, h3{
     margin: 0;
+    padding: 0;
   }
 
   .podcasts__title {
@@ -214,6 +215,7 @@ color: white;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
+    outline: 1px solid red;
   }
   .broadcasts__title {
     font-size: 48px;
@@ -225,6 +227,9 @@ color: white;
     border-radius: 10px;
     border: none;
     padding: 12px 15px 12px 12px;
+   }
+   .broadcasts__archive {
+    display: grid;
    }
    .broadcasts__cards {
     list-style: none;
@@ -261,3 +266,74 @@ height: 260px;
   margin-top: 20px;
 }
    
+
+  /* ______________ */
+.guests__container {
+  outline: 1px solid red;
+}
+  .guests__title {
+    font-size: 48px;
+}
+.guests__subtitle {
+  padding-top: 12px;
+  font-weight: 700;
+font-size: 20px;
+}
+.guests__text {
+  width: 70%;
+  padding-top: 8px;
+  font-size: 20px;
+line-height: 160%;
+}
+.guests__content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 65% 32%;
+  gap: 30px;
+}
+.guests__list, .category__list, .guest__social {
+  list-style: none;
+}
+.category__header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 28%;
+  width: 42px;
+  height: 42px;
+  background-image: url('./img/accordion_open.svg');
+}
+.category__header {
+  position: relative;
+  padding: 35px 42px 35px 0;
+  width: 688px;
+height: 20px;
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+font-size: 20px;
+}
+.category__list {
+  padding: 30px 34px 30px 0;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.category__item {
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 16px
+}
+.category__item:nth-child(4n), .category__item:last-child {
+  padding-bottom: 0;
+}
+.social {
+  display: flex;
+    gap: 30px;
+}
+
+  /* ______________ */
+
+
+/* ______________ */
