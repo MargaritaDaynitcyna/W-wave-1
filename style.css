@@ -334,6 +334,20 @@ font-size: 20px;
 }
 
   /* ______________ */
-
+.playlists__container {
+  outline: 1px solid red;
+}
 
 /* ______________ */
+.wave__container {
+  outline: 1px solid blue;
+  display: flex;
+  grid-template-columns: 57% 38%;
+  gap: 30px;
+}
+.wave__title {
+  font-size: 48px;
+}
+.wave__line {
+  margin: 19px 0;
+}
