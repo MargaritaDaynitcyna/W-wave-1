@@ -330,12 +330,57 @@ font-size: 20px;
 }
 .social {
   display: flex;
-    gap: 30px;
+    gap: 30px;              
 }
 
   /* ______________ */
 .playlists__container {
   outline: 1px solid red;
+  display: grid;
+  grid-template-columns: 30% 67%;
+  gap: 34px;
+}
+
+.playlists__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 224px 224px 224px;
+  gap: 30px;
+}
+
+.music-band__foto {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.music-band__foto-1 {
+  background-image: url('./img/mb_ploho.png');
+}
+
+.music-band__foto:after {
+  position: absolute;
+  right: 0;
+  height: 15px;
+  padding: 4px;
+  padding-top: 1px;
+  background-color: #333;
+}
+.music-band__foto-1:after {
+  content: url('./img/country_russia.svg');
+}
+
+.music-band__info{
+  border: 1px solid #E6E8EC;
+  padding: 16px;
+}
+.music-band__albums {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #A1A6B4;
 }
 
 /* ______________ */
@@ -350,4 +395,59 @@ font-size: 20px;
 }
 .wave__line {
   margin: 19px 0;
+}
+
+/* _____________ */
+.about-us {
+  background: #121723;
+  color: white;
+}
+
+.about-us__info, .about-us__right {
+  display: flex;
+  gap: 30px;
+}
+
+.about-us__people {
+  list-style: none;
+  display: flex;
+}
+
+.form {
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 70px 70px 15px;
+  gap: 30px;
+}
+
+.form__input-massage {
+  grid-column: 1/3;
+}
+
+/* ____________ */
+.footer {
+  height: 323px;
+  background: #292E39;
+}
+
+.footer__container {
+  height: 88px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.footer__link {
+  color: white;
+}
+.footer__wave {
+  height: 12px;
+  background-image: url('./img/wavy_long_line.svg');
+  background-repeat: repeat-x;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #A1A6B4;
+  padding: 10px 0;
 }
