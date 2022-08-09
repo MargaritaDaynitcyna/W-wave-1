@@ -31,9 +31,70 @@ p, ul,li h1, h2, h3{
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url('https://avatars.mds.yandex.net/get-pdb/1920338/60d93b87-947e-4dea-9b55-28f319726d56/s1200');
       grid-row: 1/3;
   }
+  .podcasts__foto-1 {
+    background-image: url('./img/podcast1.png');
+  }
+  .podcasts__foto-2 {
+    background-image: url('./img/podcast2.png');
+  }
+  .podcasts__foto-3 {
+    background-image: url('./img/podcast3.png');
+  }
+  .podcasts__foto-4 {
+    background-image: url('./img/podcast4.png');
+  }
+  .podcasts__foto-5 {
+    background-image: url('./img/podcast5.png');
+  }
+  .podcasts__foto-6 {
+    background-image: url('./img/podcast6.png');
+  }
+  .podcasts__foto-7 {
+    background-image: url('./img/podcast7.png');
+  }
+  .podcasts__foto-8 {
+    background-image: url('./img/podcast8.png');
+  }
+
+  .podcasts__foto:after {
+        position: absolute;
+    width: 39px;
+    height: 10px;
+    padding: 3px 6px;
+    left: 0px;
+    top: 124px;
+    font-size: 10px;
+    line-height: 10px;
+    background: #E6E8EC;
+        color: black;
+    }
+
+    .podcasts__foto-1:after {
+      content: '14 июня';
+    }
+    .podcasts__foto-2:after {
+      content: '11 июня';
+    }
+    .podcasts__foto-3:after {
+      content: '8 июня';
+    }
+    .podcasts__foto-4:after {
+      content: '5 июня';
+    }
+    .podcasts__foto-5:after {
+      content: '2 июня';
+    }
+    .podcasts__foto-6:after {
+      content: '28 мая';
+    }
+    .podcasts__foto-7:after {
+      content: '22 мая';
+    }
+    .podcasts__foto-8:after {
+      content: '18 мая';
+    }
   
   .podcasts__info {
   padding: 24px 30px;
@@ -41,19 +102,7 @@ p, ul,li h1, h2, h3{
       justify-content: space-between;
   }
   
-  .podcasts__foto:after {
-  content: '14 июня';
-      position: absolute;
-  width: 39px;
-  height: 10px;
-  padding: 3px 6px;
-  left: 0px;
-  top: 124px;
-  font-size: 10px;
-  line-height: 10px;
-  background: #E6E8EC;
-      color: black;
-  }
+
   .info_top {
     position: absolute;
     width: 176px;
@@ -212,7 +261,7 @@ color: white;
   /* ______________ */
   .broadcasts__container {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 25% 72%;;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     outline: 1px solid red;
@@ -242,8 +291,8 @@ color: white;
     padding: 0;
    }
 .card {
-  width: 255px;
-height: 260px;
+  /* width: 255px;
+height: 260px; */
 }
 .card__info {
   padding: 20px 16px;
@@ -252,6 +301,24 @@ height: 260px;
 }
 .card__img {
   height: 148px;
+}
+.card__img-1 {
+  background-image: url('./img/broadcast1.png');
+}
+.card__img-2 {
+  background-image: url('./img/broadcast2.png');
+}
+.card__img-3 {
+  background-image: url('./img/broadcast3.png');
+}
+.card__img-4 {
+  background-image: url('./img/broadcast4.png');
+}
+.card__img-5 {
+  background-image: url('./img/broadcast5.png');
+}
+.card__img-6 {
+  background-image: url('./img/broadcast6.png');
 }
 .card__title {
   font-size: 20px;
@@ -306,7 +373,7 @@ line-height: 160%;
 .category__header {
   position: relative;
   padding: 35px 42px 35px 0;
-  width: 688px;
+  /* width: 100%; */
 height: 20px;
 border-top: 1px solid grey;
 border-bottom: 1px solid grey;
@@ -331,6 +398,14 @@ font-size: 20px;
 .social {
   display: flex;
     gap: 30px;              
+}
+.guest__img {
+  width: 100%;
+  height: 220px;
+  background-image: url('./img/guests_olga.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
   /* ______________ */
@@ -359,6 +434,39 @@ font-size: 20px;
 .music-band__foto-1 {
   background-image: url('./img/mb_ploho.png');
 }
+.music-band__foto-2 {
+  background-image: url('./img/mb_molchat_doma.png');
+}
+.music-band__foto-3 {
+  background-image: url('./img/mb_motorama.png');
+}
+.music-band__foto-4 {
+  background-image: url('./img/mb_human_tetris.png');
+}
+.music-band__foto-5 {
+  background-image: url('./img/mb_buerak.png');
+}
+.music-band__foto-6 {
+  background-image: url('./img/mb_july_days.png');
+}
+.music-band__foto-7 {
+  background-image: url('./img/mb_joy_division.png');
+}
+.music-band__foto-8 {
+  background-image: url('./img/mb_the_cure.png');
+}
+.music-band__foto-9 {
+  background-image: url('./img/mb_the_smith.png');
+}
+.music-band__foto-10 {
+  background-image: url('./img/mb_new_order.png');
+}
+.music-band__foto-11 {
+  background-image: url('./img/mb_bauhaus.png');
+}
+.music-band__foto-12 {
+  background-image: url('./img/mb_gang_of_four.png');
+}
 
 .music-band__foto:after {
   position: absolute;
@@ -368,8 +476,21 @@ font-size: 20px;
   padding-top: 1px;
   background-color: #333;
 }
-.music-band__foto-1:after {
+.music-band__foto-1:after,
+.music-band__foto-2:after,
+.music-band__foto-3:after,
+.music-band__foto-4:after,
+.music-band__foto-5:after,
+.music-band__foto-6:after {
   content: url('./img/country_russia.svg');
+}
+.music-band__foto-7:after,
+.music-band__foto-8:after,
+.music-band__foto-9:after,
+.music-band__foto-10:after,
+.music-band__foto-11:after,
+.music-band__foto-12:after {
+  content: url('./img/country_usa.svg');
 }
 
 .music-band__info{
@@ -386,10 +507,30 @@ font-size: 20px;
 /* ______________ */
 .wave__container {
   outline: 1px solid blue;
-  display: flex;
-  grid-template-columns: 57% 38%;
+  display: grid;
+  grid-template-columns: 58% 39%;
   gap: 30px;
 }
+.wave__img {
+  position: relative;
+  width: 100%;
+  height: 562px;
+  background-image: url('./img/old_radio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.stiker {
+  background-image: url('./img/sticker_new.png');
+  position: absolute;
+  left: 0;
+  width: 25%;
+  height: 29%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
 .wave__title {
   font-size: 48px;
 }
@@ -403,16 +544,75 @@ font-size: 20px;
   color: white;
 }
 
-.about-us__info, .about-us__right {
+.about-us__info {
+  display: grid;
+  grid-template-columns: 57% 40%;
+  gap: 30px;
+}
+
+.about-us__right {
+  height: 290px;
   display: flex;
   gap: 30px;
+}
+.spiral {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  background-image: url('./img/spiral.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.star {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .about-us__people {
   list-style: none;
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.person__foto {
+  width: 100%;
+  height: 255px;
+  background-position: center;
+}
+.person__foto-1 {
+  background-image: url('./img/us_dmitri.png');
+}
+.person__foto-2 {
+  background-image: url('./img/us_anna.png');
+}
+.person__foto-3 {
+  background-image: url('./img/us_petr.png');
+}
+.person__foto-4 {
+  background-image: url('./img/us_tatyana.png');
+}
+.person__foto-5 {
+  background-image: url('./img/us_fedor.png');
+}
+.person__foto-6 {
+  background-image: url('./img/us_svetlana.png');
 }
 
+.person__name {
+  margin-top: 30px;
+}
+.person__description {
+  margin-top: 8px;
+}
+
+.about-us__form {
+  margin-top: 30px;
+}
 .form {
   max-width: 920px;
   display: grid;
@@ -421,8 +621,17 @@ font-size: 20px;
   gap: 30px;
 }
 
+.input {
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: #121723;
+  padding: 25px 32px;
+}
+
 .form__input-massage {
   grid-column: 1/3;
+  border-radius: 30px;
+  padding: 30px 32px;
 }
 
 /* ____________ */
@@ -432,6 +641,8 @@ font-size: 20px;
 }
 
 .footer__container {
+  display: flex;
+  justify-content: space-between;
   height: 88px;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -439,6 +650,22 @@ font-size: 20px;
 .footer__link {
   color: white;
 }
+
+.footer__right {
+  width: 445px;
+  list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.footer__item {
+padding-bottom: 15px;
+}
+.footer__item:nth-child(3n) {
+  padding-bottom: 0;
+  }
+
 .footer__wave {
   height: 12px;
   background-image: url('./img/wavy_long_line.svg');
