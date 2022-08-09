@@ -125,6 +125,13 @@ p, ul,li h1, h2, h3{
     line-height: 16px;
     color: #A1A6B4;
   }
+  .podcasts__btn {
+    margin-top: 60px;
+  }
+
+
+
+  /* _________ */
 
   .container {
     max-width: 1110px;
@@ -257,6 +264,28 @@ border-radius: 40px;
 text-align: center;
 color: white;
   }
+
+
+  /* ___________________ */
+.modal {
+  background: rgba(128, 128, 128, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+}
+.modal__container {
+  width: 704px;
+  height: 535px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px;
+background: darkblue;
+}
+
 
   /* ______________ */
   .broadcasts__container {

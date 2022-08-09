@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
   <header class="header">
     
       <div class="header1">
@@ -55,10 +53,46 @@
             <button id="" name="login" class="login__btn">
               Вход
             </button>
+            
           </div> 
         </div>
       </div>
       </div>
+
+      <div class="modal">
+         <div class="modal__container">
+          <h2 class="modal__title">Вход</h2>
+          <p class="modal__text">
+            Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
+          </p>
+          <form action="#" autocomplete="on" method="POST" class="form about-us__form">
+              <input type="text" name="login" placeholder="Логин" class="input form__input">
+              <input type="text" name="password" placeholder="Пароль" class="input form__input">
+              <button type="submit" class="btn form__btn">
+                  Войти
+              </button>
+            </form>
+          <p class="modal__help">Войти с помощью:</p>
+          <ul class="social guest__social">
+            <li class="social__item">
+              <a class="social__link" href="">
+                <img class="social__icon" src="./img/facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <img class="social__icon" src="./img/vk.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <img class="social__icon" src="./img/google.svg" alt="">
+              </a>
+            </li>
+          </ul>
+         </div>
+      </div>
+
       <div class="header2">
         <nav id="" class="nav">
           <ul class="nav__list">
@@ -336,6 +370,9 @@
             </ul>
           </li>
         </ul>
+        <button class="btn podcasts__btn">
+          Ещё подкасты
+        </button>
       </div>
     </section>
 
