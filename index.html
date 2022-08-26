@@ -49,8 +49,9 @@
               <img src="img/search.svg" alt="">
             </button>
           </div> 
+           <!--    JS    -->
           <div class="header__login">
-            <button id="" name="login" class="login__btn">
+            <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
               Вход
             </button>
             
@@ -59,8 +60,11 @@
       </div>
       </div>
 
-      <div class="modal">
+      <div id="modal" class="modal">
          <div class="modal__container">
+          <!--    JS    -->
+          <button class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
+          </button>
           <h2 class="modal__title">Вход</h2>
           <p class="modal__text">
             Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
@@ -81,7 +85,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="">
-                <img class="social__icon" src="./img/vk.svg" alt="">
+                <img class="social__icon" src="./img/vk_modal.svg" alt="">
               </a>
             </li>
             <li class="social__item">
