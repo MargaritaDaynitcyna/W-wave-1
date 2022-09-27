@@ -1,68 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="header">
     
-      <div class="header1">
+      <div class="header-top">
         <div class="container header__container">
-        <div class="header__logo">
-          <a href="" class="logo">
-            <img src="./img/logo.svg" alt="Логотип" class="logo__img">
-          </a>
-        </div>
-        <div class="header__nav">
-          <button id="burgerMenu" name="Меню" class="burger">
-            <svg class="burger" viewbox=" 0 0 25 25 ">
-              <use xlink:href="#burger"></use>
-            </svg>
-          </button>
-          <nav id="menu" class="nav">
-            <button id="closeMenu" name="Закрыть" class="nav__close">
-              <svg class="close" viewbox=" 0 0 10 10 ">
-                <use xlink:href="#close"></use>
+          <div class="header__logo">
+            <a href="" class="logo">
+              <img src="./img/logo.svg" alt="Логотип" class="logo__img">
+            </a>
+          </div>
+          <div class="header__nav">
+            <button id="burgerMenu" name="Меню" class="burger">
+              <svg class="burger" viewbox=" 0 0 25 25 ">
+                <use xlink:href="#burger"></use>
               </svg>
             </button>
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#about-studio" class="nav__link">Подкасты</a></li>
-              <li class="nav__item"><a href="#projects" class="nav__link">Передачи</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Гости</a></li>
-              <li class="nav__item"><a href="#master-classes" class="nav__link">Плейлисты</a></li>
-              <li class="nav__item"><a href="#contacts" class="nav__link">О нас</a></li>
-            </ul>
-          </nav>
+            <nav id="menu" class="nav">
+              <button id="closeMenu" name="Закрыть" class="nav__close">
+                <svg class="close" viewbox=" 0 0 10 10 ">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#about-studio" class="nav__link">Подкасты</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Передачи</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Гости</a></li>
+                <li class="nav__item"><a href="#master-classes" class="nav__link">Плейлисты</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">О нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sl">
+            <div class="header__search">
+              <button id="searchBtn" name="search" class="search__btn">
+                <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
+                  <use xlink:href="#search"></use>
+                </svg> -->
+                <img src="img/search.svg" alt="">
+              </button>
+            </div> 
+            <!--    JS    -->
+            <div class="header__login">
+              <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
+                Вход
+              </button>
+              
+            </div> 
+          </div>
         </div>
-        <div class="sl">
-          <div class="header__search">
-            <button id="searchBtn" name="search" class="search__btn">
-              <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
-                <use xlink:href="#search"></use>
-              </svg> -->
-              <img src="img/search.svg" alt="">
-            </button>
-          </div> 
-           <!--    JS    -->
-          <div class="header__login">
-            <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
-              Вход
-            </button>
-            
-          </div> 
-        </div>
-      </div>
       </div>
 
-      <div id="modal" class="modal">
+      <!-- <div id="modal" class="modal">
          <div class="modal__container">
-          <!--    JS    -->
           <button class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
           </button>
           <h2 class="modal__title">Вход</h2>
@@ -95,7 +95,7 @@
             </li>
           </ul>
          </div>
-      </div>
+      </div> -->
 
       <div class="header2">
         <nav id="" class="nav">
