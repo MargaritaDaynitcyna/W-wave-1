@@ -3,53 +3,48 @@
   font-family: 'Muller Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/MullerRegular.woff2') format('woff2'),
-    url('./fonts/MullerRegular.woff') format('woff');
+  src: url('../fonts//MullerRegular.woff2') format('woff2'),
+    url('../fonts//MullerRegular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Muller Medium';
   font-style: normal;
   font-weight: 500;
-  src: local(''),
-    url('./fonts/MullerMedium.woff2') format('woff2'),
-    url('./fonts/MullerMedium.woff') format('woff');
+  src: url('../fonts//MullerMedium.woff2') format('woff2'),
+    url('../fonts//MullerMedium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Muller Bold';
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-    url('./fonts/MullerBold.woff2') format('woff2'),
-    url('./fonts/MullerBold.woff') format('woff');
+  src: url('../fonts//MullerBold.woff2') format('woff2'),
+    url('../fonts//MullerBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Muller Light';
   font-style: italic;
   font-weight: 300;
-  src: local(''),
-    url('./fonts/MullerLightItalic.woff2') format('woff2'),
-    url('./fonts/MullerLightItalic.woff') format('woff');
+  src: url('../fonts//MullerLightItalic.woff2') format('woff2'),
+    url('../fonts//MullerLightItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Muller Regular';
   font-style: italic;
   font-weight: 400;
-  src: local(''),
-    url('./fonts/MullerRegularItalic.woff2') format('woff2'),
-    url('./fonts/MullerRegularItalic.woff') format('woff');
+  src: url('../fonts//MullerRegularItalic.woff2') format('woff2'),
+    url('../fonts//MullerRegularItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Open Sans Regular';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-    url('./fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('./fonts/OpenSans-Regular.woff') format('woff');
+  src: url('../fonts//OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts//OpenSans-Regular.woff') format('woff');
 }
 
 /* All */
@@ -74,7 +69,7 @@ img {
 
 
 html {
-  font-family: 'Muller Regular';
+  font-family: 'Muller Regular', sans-serif;
   font-size: 16px;
 }
 
@@ -132,28 +127,28 @@ li {
       grid-row: 1/3;
   }
   .podcasts__foto-1 {
-    background-image: url('./img/podcast1.png');
+    background-image: url('../img/podcast1.png');
   }
   .podcasts__foto-2 {
-    background-image: url('./img/podcast2.png');
+    background-image: url('../img/podcast2.png');
   }
   .podcasts__foto-3 {
-    background-image: url('./img/podcast3.png');
+    background-image: url('../img/podcast3.png');
   }
   .podcasts__foto-4 {
-    background-image: url('./img/podcast4.png');
+    background-image: url('../img/podcast4.png');
   }
   .podcasts__foto-5 {
-    background-image: url('./img/podcast5.png');
+    background-image: url('../img/podcast5.png');
   }
   .podcasts__foto-6 {
-    background-image: url('./img/podcast6.png');
+    background-image: url('../img/podcast6.png');
   }
   .podcasts__foto-7 {
-    background-image: url('./img/podcast7.png');
+    background-image: url('../img/podcast7.png');
   }
   .podcasts__foto-8 {
-    background-image: url('./img/podcast8.png');
+    background-image: url('../img/podcast8.png');
   }
 
   .podcasts__foto:after {
@@ -193,13 +188,13 @@ li {
     .podcasts__foto-8:after {
       content: '18 мая';
     }
-  
+
   .podcasts__info {
   padding: 24px 30px;
   display: flex;
       justify-content: space-between;
   }
-  
+
 
   .info_top {
     position: absolute;
@@ -296,7 +291,7 @@ header{
     height: 60px;
     display: grid;
     grid-template-columns: 1fr 31.5% 46px;
-    gap: 52px;  
+    gap: 52px;
   }
 
   .air {
@@ -392,7 +387,7 @@ background: #121723;
     height: 42px;
     border: none;
     background-color: #121723;
-    background-image: url('./img/closed_modal.svg');
+    background-image: url('../img/closed_modal.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -451,22 +446,22 @@ height: 260px; */
   height: 148px;
 }
 .card__img-1 {
-  background-image: url('./img/broadcast1.png');
+  background-image: url('../img/broadcast1.png');
 }
 .card__img-2 {
-  background-image: url('./img/broadcast2.png');
+  background-image: url('../img/broadcast2.png');
 }
 .card__img-3 {
-  background-image: url('./img/broadcast3.png');
+  background-image: url('../img/broadcast3.png');
 }
 .card__img-4 {
-  background-image: url('./img/broadcast4.png');
+  background-image: url('../img/broadcast4.png');
 }
 .card__img-5 {
-  background-image: url('./img/broadcast5.png');
+  background-image: url('../img/broadcast5.png');
 }
 .card__img-6 {
-  background-image: url('./img/broadcast6.png');
+  background-image: url('../img/broadcast6.png');
 }
 .card__title {
   font-size: 20px;
@@ -480,7 +475,7 @@ height: 260px; */
   display: inline-block;
   margin-top: 20px;
 }
-   
+
 
   /* ______________ */
 .guests__container {
@@ -516,7 +511,7 @@ line-height: 160%;
   top: 28%;
   width: 42px;
   height: 42px;
-  background-image: url('./img/accordion_open.svg');
+  background-image: url('../img/accordion_open.svg');
 }
 .category__header {
   position: relative;
@@ -545,12 +540,12 @@ font-size: 20px;
 }
 .social {
   display: flex;
-    gap: 30px;              
+    gap: 30px;
 }
 .guest__img {
   width: 100%;
   height: 220px;
-  background-image: url('./img/guests_olga.png');
+  background-image: url('../img/guests_olga.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -580,40 +575,40 @@ font-size: 20px;
   background-repeat: no-repeat;
 }
 .music-band__foto-1 {
-  background-image: url('./img/mb_ploho.png');
+  background-image: url('../img/mb_ploho.png');
 }
 .music-band__foto-2 {
-  background-image: url('./img/mb_molchat_doma.png');
+  background-image: url('../img/mb_molchat_doma.png');
 }
 .music-band__foto-3 {
-  background-image: url('./img/mb_motorama.png');
+  background-image: url('../img/mb_motorama.png');
 }
 .music-band__foto-4 {
-  background-image: url('./img/mb_human_tetris.png');
+  background-image: url('../img/mb_human_tetris.png');
 }
 .music-band__foto-5 {
-  background-image: url('./img/mb_buerak.png');
+  background-image: url('../img/mb_buerak.png');
 }
 .music-band__foto-6 {
-  background-image: url('./img/mb_july_days.png');
+  background-image: url('../img/mb_july_days.png');
 }
 .music-band__foto-7 {
-  background-image: url('./img/mb_joy_division.png');
+  background-image: url('../img/mb_joy_division.png');
 }
 .music-band__foto-8 {
-  background-image: url('./img/mb_the_cure.png');
+  background-image: url('../img/mb_the_cure.png');
 }
 .music-band__foto-9 {
-  background-image: url('./img/mb_the_smith.png');
+  background-image: url('../img/mb_the_smith.png');
 }
 .music-band__foto-10 {
-  background-image: url('./img/mb_new_order.png');
+  background-image: url('../img/mb_new_order.png');
 }
 .music-band__foto-11 {
-  background-image: url('./img/mb_bauhaus.png');
+  background-image: url('../img/mb_bauhaus.png');
 }
 .music-band__foto-12 {
-  background-image: url('./img/mb_gang_of_four.png');
+  background-image: url('../img/mb_gang_of_four.png');
 }
 
 .music-band__foto:after {
@@ -630,7 +625,7 @@ font-size: 20px;
 .music-band__foto-4:after,
 .music-band__foto-5:after,
 .music-band__foto-6:after {
-  content: url('./img/country_russia.svg');
+  content: url('../img/country_russia.svg');
 }
 .music-band__foto-7:after,
 .music-band__foto-8:after,
@@ -638,7 +633,7 @@ font-size: 20px;
 .music-band__foto-10:after,
 .music-band__foto-11:after,
 .music-band__foto-12:after {
-  content: url('./img/country_usa.svg');
+  content: url('../img/country_usa.svg');
 }
 
 .music-band__info{
@@ -663,13 +658,13 @@ font-size: 20px;
   position: relative;
   width: 100%;
   height: 562px;
-  background-image: url('./img/old_radio.png');
+  background-image: url('../img/old_radio.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .stiker {
-  background-image: url('./img/sticker_new.png');
+  background-image: url('../img/sticker_new.png');
   position: absolute;
   left: 0;
   width: 25%;
@@ -707,7 +702,7 @@ font-size: 20px;
   width: 100%;
   max-width: 160px;
   height: 100%;
-  background-image: url('./img/spiral.svg');
+  background-image: url('../img/spiral.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -715,7 +710,7 @@ font-size: 20px;
 .star {
   width: 100%;
   height: 100%;
-  background-image: url('./img/star.svg');
+  background-image: url('../img/star.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -733,22 +728,22 @@ font-size: 20px;
   background-position: center;
 }
 .person__foto-1 {
-  background-image: url('./img/us_dmitri.png');
+  background-image: url('../img/us_dmitri.png');
 }
 .person__foto-2 {
-  background-image: url('./img/us_anna.png');
+  background-image: url('../img/us_anna.png');
 }
 .person__foto-3 {
-  background-image: url('./img/us_petr.png');
+  background-image: url('../img/us_petr.png');
 }
 .person__foto-4 {
-  background-image: url('./img/us_tatyana.png');
+  background-image: url('../img/us_tatyana.png');
 }
 .person__foto-5 {
-  background-image: url('./img/us_fedor.png');
+  background-image: url('../img/us_fedor.png');
 }
 .person__foto-6 {
-  background-image: url('./img/us_svetlana.png');
+  background-image: url('../img/us_svetlana.png');
 }
 
 .person__name {
@@ -816,7 +811,7 @@ padding-bottom: 15px;
 
 .footer__wave {
   height: 12px;
-  background-image: url('./img/wavy_long_line.svg');
+  background-image: url('../img/wavy_long_line.svg');
   background-repeat: repeat-x;
 }
 
@@ -853,3 +848,4 @@ padding-bottom: 15px;
     grid-template-columns: 1fr 1fr;
     }
 }
+
