@@ -1,50 +1,50 @@
 /* Fonts */
 @font-face {
-  font-family: 'Muller Regular';
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts//MullerRegular.woff2') format('woff2'),
-    url('../fonts//MullerRegular.woff') format('woff');
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Muller Medium';
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts//MullerMedium.woff2') format('woff2'),
-    url('../fonts//MullerMedium.woff') format('woff');
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Muller Bold';
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts//MullerBold.woff2') format('woff2'),
-    url('../fonts//MullerBold.woff') format('woff');
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Muller Light';
+  font-family: 'Muller';
   font-style: italic;
   font-weight: 300;
-  src: url('../fonts//MullerLightItalic.woff2') format('woff2'),
-    url('../fonts//MullerLightItalic.woff') format('woff');
+  src: url('../fonts/MullerLightItalic.woff2') format('woff2'),
+    url('../fonts/MullerLightItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Muller Regular';
+  font-family: 'Muller';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts//MullerRegularItalic.woff2') format('woff2'),
-    url('../fonts//MullerRegularItalic.woff') format('woff');
+  src: url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+    url('../fonts/MullerRegularItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Open Sans Regular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts//OpenSans-Regular.woff2') format('woff2'),
-    url('../fonts//OpenSans-Regular.woff') format('woff');
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
 }
 
 /* All */
@@ -55,6 +55,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,ol {
@@ -69,7 +70,8 @@ img {
 
 
 html {
-  font-family: 'Muller Regular', sans-serif;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -91,67 +93,87 @@ li {
 }
 
 
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.btn {
+padding: 0;
+cursor: pointer;
+}
+.section-offset {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 12px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 400;
+}
 
 
 
+/* ! Podcasts */
 
-
-  .podcasts__title {
+  /* .podcasts__title {
     font-size: 48px;
-  }
+  } */
   .podcasts__list {
-    max-width: 1100px;
+    /* max-width: 1100px;
     margin: auto;
-    padding: 0;
-    display: grid;
+    padding: 0; */
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-
-
+    gap: 30px; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
   }
   .podcasts__item {
-  width: 100%;
+  flex-basis: 48%;
   height: 140px;
   outline: 1px solid red;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 112px 1fr;
-  grid-template-rows: 1fr 32px;
   }
-  .podcasts__foto {
+  .podcast {
+    display: flex;
+  }
+  .podcast__foto {
       position: relative;
       width: 112px;
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      grid-row: 1/3;
   }
-  .podcasts__foto-1 {
+  .podcast__foto-1 {
     background-image: url('../img/podcast1.png');
   }
-  .podcasts__foto-2 {
+  .podcast__foto-2 {
     background-image: url('../img/podcast2.png');
   }
-  .podcasts__foto-3 {
+  .podcast__foto-3 {
     background-image: url('../img/podcast3.png');
   }
-  .podcasts__foto-4 {
+  .podcast__foto-4 {
     background-image: url('../img/podcast4.png');
   }
-  .podcasts__foto-5 {
+  .podcast__foto-5 {
     background-image: url('../img/podcast5.png');
   }
-  .podcasts__foto-6 {
+  .podcast__foto-6 {
     background-image: url('../img/podcast6.png');
   }
-  .podcasts__foto-7 {
+  .podcast__foto-7 {
     background-image: url('../img/podcast7.png');
   }
-  .podcasts__foto-8 {
+  .podcast__foto-8 {
     background-image: url('../img/podcast8.png');
   }
 
-  .podcasts__foto:after {
+  .podcast__foto:after {
         position: absolute;
     width: 39px;
     height: 10px;
@@ -164,45 +186,57 @@ li {
         color: black;
     }
 
-    .podcasts__foto-1:after {
+    .podcast__foto-1:after {
       content: '14 июня';
     }
-    .podcasts__foto-2:after {
+    .podcast__foto-2:after {
       content: '11 июня';
     }
-    .podcasts__foto-3:after {
+    .podcast__foto-3:after {
       content: '8 июня';
     }
-    .podcasts__foto-4:after {
+    .podcast__foto-4:after {
       content: '5 июня';
     }
-    .podcasts__foto-5:after {
+    .podcast__foto-5:after {
       content: '2 июня';
     }
-    .podcasts__foto-6:after {
+    .podcast__foto-6:after {
       content: '28 мая';
     }
-    .podcasts__foto-7:after {
+    .podcast__foto-7:after {
       content: '22 мая';
     }
-    .podcasts__foto-8:after {
+    .podcast__foto-8:after {
       content: '18 мая';
     }
 
-  .podcasts__info {
-  padding: 24px 30px;
-  display: flex;
-      justify-content: space-between;
+.podcast__info {
+  width: calc(100% - 112px);
+}
+  .podcast__desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 30px;
+  }
+  .podcast__time {
+    margin-bottom: 8px;
+    font-size: 12px;
+line-height: 12px;
+  }
+  .podcast__title {
+    margin-bottom:4px;
+    font-size: 20px;
+line-height: 20px;
+  }
+  .podcast__autor {
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
   }
 
 
-  .info_top {
-    position: absolute;
-    width: 176px;
-    height: 60px;
-  }
-
-  .podcasts__action {
+  .podcast__action {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -218,26 +252,28 @@ li {
     line-height: 16px;
     color: #A1A6B4;
   }
-  .podcasts__btn {
-    margin-top: 60px;
+  .podcast__play {
+    background-color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    cursor: pointer;
   }
 
 
 
-  /* _________ */
+  /*! _____header____ */
 
-  .container {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding-right: 100px;
-    padding-left: 100px;
-}
 
 header{
   outline: 1px solid red;
 }
 
   .header-top {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* height: 80px; */
     /* display: grid;
     height: 40px;
     padding: 20px 0;
@@ -245,13 +281,14 @@ header{
     gap: 80px; */
     border-bottom: 1px solid #E6E8EC;
   }
-  .header__container {
-    display: grid;
+  .header-top__container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 40px;
-    padding: 20px 0;
+    height: 80px;
+    /* padding: 20px 0;
     grid-template-columns: 15% 1fr 14%;
-    gap: 80px;
+    gap: 80px; */
   }
   .nav__close, .burger {
     display: none;
@@ -287,15 +324,19 @@ header{
     background-color: white;
   }
 
-  .header2 {
+  /* .header-bottom {
     height: 60px;
-    display: grid;
-    grid-template-columns: 1fr 31.5% 46px;
-    gap: 52px;
+  } */
+  .header-bottom__container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .air {
     display: flex;
+    flex-basis: 349px;
     padding: 10px 0;
   }
   .air__early, .air__now {
@@ -330,19 +371,27 @@ background-color: grey;
 
 
   /* ________ */
-  .main__container {
+  .hero__container {
     outline: 1px solid red;
     display: flex;
     height: 450px;
     justify-content: space-between;
     align-items: center;
+    background-image: url('../img/microphone.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 100px;
+    background-size: 28%;
   }
-  .hero {
+  .hero__content {
     width: 635px;
   }
   .hero__title {
     font-weight: 700;
 font-size: 60px;
+  }
+  .hero__title i {
+    font-weight: 400;
   }
   .hero__text {
     padding-top: 14px;

@@ -13,10 +13,10 @@
 <body>
   <header class="header">
       <div class="header-top">
-        <div class="container header__container">
+        <div class="container header-top__container">
           <div class="header__logo">
-            <a href="" class="logo">
-              <img src="./img/logo.svg" alt="Логотип" class="logo__img">
+            <a href="#" class="logo">
+              <img src="./img/logo.svg" alt="Logo" class="logo__img">
             </a>
           </div>
           <div class="header__nav">
@@ -32,31 +32,30 @@
                 </svg>
               </button>
               <ul class="nav__list">
-                <li class="nav__item"><a href="#about-studio" class="nav__link">Подкасты</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Передачи</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Гости</a></li>
-                <li class="nav__item"><a href="#master-classes" class="nav__link">Плейлисты</a></li>
-                <li class="nav__item"><a href="#contacts" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="#podcasts" class="nav__link">Подкасты</a></li>
+                <li class="nav__item"><a href="#broadcasts" class="nav__link">Передачи</a></li>
+                <li class="nav__item"><a href="#guests" class="nav__link">Гости</a></li>
+                <li class="nav__item"><a href="#playlists" class="nav__link">Плейлисты</a></li>
+                <li class="nav__item"><a href="#about-us" class="nav__link">О нас</a></li>
               </ul>
             </nav>
           </div>
-          <div class="sl">
-            <div class="header__search">
-              <button id="searchBtn" name="search" class="search__btn">
-                <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
-                  <use xlink:href="#search"></use>
-                </svg> -->
-                <img src="img/search.svg" alt="">
-              </button>
-            </div>
-            <!--    JS    -->
-            <div class="header__login">
-              <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
-                Вход
-              </button>
-
-            </div>
+          <!-- <div class="sl"> -->
+          <div class="header__search">
+            <button id="searchBtn" name="search" class="search__btn">
+              <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
+                <use xlink:href="#search"></use>
+              </svg> -->
+              <img src="img/search.svg" alt="">
+            </button>
           </div>
+          <!--    JS    -->
+          <div class="header__login">
+            <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
+              Вход
+            </button>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
 
@@ -64,7 +63,7 @@
          <div class="modal__container">
           <button class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
           </button>
-          <h2 class="modal__title">Вход</h2>
+          <h2 class="section-title modal__title">Вход</h2>
           <p class="modal__text">
             Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
           </p>
@@ -96,7 +95,8 @@
          </div>
       </div> -->
 
-      <div class="header2">
+      <div class="header-bottom">
+        <div class="container header-bottom__container">
         <nav id="" class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#about-studio" class="nav__link">Новости</a></li>
@@ -127,61 +127,75 @@
            <div class="circle">12+</div>
         </div>
       </div>
-    <!-- </div> -->
+    </div>
   </header>
 
   <main>
-    <section class="main">
-      <div class="container main__container">
-        <div class="hero">
+    <section id="hero" class="hero">
+      <div class="container hero__container section-offset">
+        <div class="hero__content">
           <h1 class="hero__title">
-            Радио W-Wawe
+            Радио <i>W-Wawe</i>
           </h1>
           <p class="hero__text">
-            Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре.
-            Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира —
-            архив передач и многое другое:)
+            Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре.
+            Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира &mdash;
+            архив передач и&nbsp;многое другое:)
           </p>
           <a href="#" role="button" class="btn hero__btn">Слушать эфир</a>
         </div>
-        <div class="mic">
+        <!-- <div class="mic">
           <img src="./img/microphone.png" alt="">
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section class="podcasts">
+    <section id="podcasts" class="podcasts section-offset">
       <div class="container podcasts__container">
-        <h2 class="podcasts__title">
+        <h2 class="section-title podcasts__title">
           Подкасты
         </h2>
         <ul class="podcasts__list">
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-1"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>15:43</p>
-                <p>Европа. XIX век</p>
-                <p>Дмитрий Гутенберг</p>
+          <li class="podcast podcasts__item">
+            <!-- <figure class="podcasts__foto podcasts__foto-1">
+              <img src="./img/podcast1.png" alt="">
+              <figcaption>
+                <time>16july</time>
+              </figcaption>
+            </figure> -->
+            <div class="podcast__foto podcast__foto-1"></div>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <!-- time -->
+                  <p class="podcast__time">15:43</p>
+                  <p class="podcast__title">Европа. XIX век</p>
+                  <p class="podcast__autor">Дмитрий Гутенберг</p>
+                </div>
+                <!-- <div class="podcast__text"> -->
+                  <button class="podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
+                <!-- </div> -->
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">258</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">104</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">68</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">258</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">104</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">68</span>
-              </li>
-            </ul>
           </li>
           <li class="podcasts__item">
             <div class="podcasts__foto podcasts__foto-2"></div>
@@ -379,10 +393,10 @@
       </div>
     </section>
 
-    <section class="broadcasts">
+    <section id="broadcasts" class="broadcasts section-offset">
       <div class="container broadcasts__container">
         <div class="broadcasts__info">
-          <h2 class="broadcasts__title">
+          <h2 class="section-title broadcasts__title">
             Передачи
           </h2>
           <div class="broadcasts__select">
@@ -491,9 +505,9 @@
     </section>
 
 
-    <section class="guests">
+    <section id="guests" class="guests section-offset">
       <div class="container guests__container">
-        <h2 class="guests__title">
+        <h2 class="section-title guests__title">
           Гости
         </h2>
         <p class="guests__subtitle">
@@ -671,10 +685,10 @@
       </div>
     </section>
 
-    <section class="playlists">
+    <section id="playlists" class="playlists section-offset">
       <div class="container playlists__container">
         <div class="playlists__info">
-          <h2 class="playlists__title">
+          <h2 class="section-title playlists__title">
             Плейлисты
           </h2>
           <form class="playlists__genre">
@@ -849,11 +863,11 @@
       </div>
     </section>
 
-    <section class="wave">
+    <section id="wave" class="wave">
       <div class="container wave__container">
         <div class="wave__img"><div class="stiker"></div></div>
         <div class="wave__info">
-          <h2 class="wave__title">
+          <h2 class="section-title wave__title">
             Будь с нами на одной волне!
           </h2>
           <img src="./img/wavy_line.svg" alt="" class="wave__line">
@@ -879,11 +893,11 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section id="about-us"class="about-us section-offset">
       <div class="container about-us__container">
         <div class="about-us__info">
           <div class="about-us__left">
-            <h2 class="about-us__title">
+            <h2 class="section-title about-us__title">
               О нас
             </h2>
             <p class="about-us__subtitle">
@@ -978,7 +992,7 @@
 
 
   <footer class="footer">
-    <div class="container footer__container">
+    <div class="container footer__container section-offset">
       <div class="footer__left">
         <img src="./img/logo.svg" alt="" class="footer__logo">
         <ul class="social footer__social">
