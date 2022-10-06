@@ -31,7 +31,7 @@
                   <use xlink:href="#close"></use>
                 </svg>
               </button>
-              <ul class="nav__list">
+              <ul class="nav__list fs20">
                 <li class="nav__item"><a href="#podcasts" class="nav__link">Подкасты</a></li>
                 <li class="nav__item"><a href="#broadcasts" class="nav__link">Передачи</a></li>
                 <li class="nav__item"><a href="#guests" class="nav__link">Гости</a></li>
@@ -40,26 +40,26 @@
               </ul>
             </nav>
           </div>
-          <!-- <div class="sl"> -->
-          <div class="header__search">
-            <button id="searchBtn" name="search" class="search__btn">
-              <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
-                <use xlink:href="#search"></use>
-              </svg> -->
-              <img src="img/search.svg" alt="">
-            </button>
+          <div class="header__other">
+            <div class="header__search">
+              <button id="searchBtn" name="search" class="btn search__btn">
+                <!-- <svg class="search__icon" viewbox=" 0 0 25 25 ">
+                  <use xlink:href="#search"></use>
+                </svg> -->
+                <img src="img/search.svg" alt="">
+              </button>
+            </div>
+            <!--    JS    -->
+            <div class="header__login">
+              <button id="" name="login" class="btn btn-small login__btn" onclick="document.getElementById('modal').style.display = 'block';">
+                Вход
+              </button>
+            </div>
           </div>
-          <!--    JS    -->
-          <div class="header__login">
-            <button id="" name="login" class="login__btn" onclick="document.getElementById('modal').style.display = 'block';">
-              Вход
-            </button>
-          </div>
-          <!-- </div> -->
         </div>
       </div>
-
-      <!-- <div id="modal" class="modal">
+<!--
+      <div id="modal" class="modal">
          <div class="modal__container">
           <button class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
           </button>
@@ -70,7 +70,7 @@
           <form action="#" autocomplete="on" method="POST" class="modal__form">
               <input type="text" name="login" placeholder="Логин" class="input form__input">
               <input type="text" name="password" placeholder="Пароль" class="input form__input">
-              <button type="submit" class="btn form__btn">
+              <button type="submit" class="btn btn-big btn-big-primaryform__btn">
                   Войти
               </button>
             </form>
@@ -97,34 +97,34 @@
 
       <div class="header-bottom">
         <div class="container header-bottom__container">
-        <nav id="" class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#about-studio" class="nav__link">Новости</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link">Блоги</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Топы</a></li>
-            <li class="nav__item"><a href="#master-classes" class="nav__link">Опросы</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Рейтинги</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Реклама</a></li>
+        <nav id="" class="topics">
+          <ul class="topics__list">
+            <li class="topics__item"><a href="#" class="topics__link">Новости</a></li>
+            <li class="topics__item"><a href="#" class="topics__link">Блоги</a></li>
+            <li class="topics__item"><a href="#" class="topics__link">Топы</a></li>
+            <li class="topics__item"><a href="#" class="topics__link">Опросы</a></li>
+            <li class="topics__item"><a href="#" class="topics__link">Рейтинги</a></li>
+            <li class="topics__item"><a href="#" class="topics__link">Реклама</a></li>
           </ul>
         </nav>
         <div class="air">
           <div class="air__early">
             <img class="early__icon" src="img/play_header_btn.svg" alt="">
             <div class="early__info">
-              <p class="early__title">Ранее в эфире</p>
+              <p class="early__title fs12">Ранее в эфире</p>
               <p class="early__text">«Музыка»</p>
             </div>
           </div>
           <div class="air__now">
             <img class="now__icon" src="img/play_header_btn.svg" alt="">
             <div class="now__info">
-              <p class="now__title">Сейчас в эфире</p>
+              <p class="now__title fs12">Сейчас в эфире</p>
               <p class="now__text">«Как так?»</p>
             </div>
           </div>
         </div>
         <div class="age">
-           <div class="circle">12+</div>
+           <div class="circle fs12">12+</div>
         </div>
       </div>
     </div>
@@ -142,7 +142,7 @@
             Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира &mdash;
             архив передач и&nbsp;многое другое:)
           </p>
-          <a href="#" role="button" class="btn hero__btn">Слушать эфир</a>
+          <a href="#" role="button" class="btn btn-big btn-big-primary hero__btn">Слушать эфир</a>
         </div>
         <!-- <div class="mic">
           <img src="./img/microphone.png" alt="">
@@ -157,23 +157,23 @@
         </h2>
         <ul class="podcasts__list">
           <li class="podcast podcasts__item">
-            <!-- <figure class="podcasts__foto podcasts__foto-1">
+            <figure class="podcast__foto">
               <img src="./img/podcast1.png" alt="">
-              <figcaption>
-                <time>16july</time>
+              <figcaption class="podcast__date">
+                <time>14 июня</time>
               </figcaption>
-            </figure> -->
-            <div class="podcast__foto podcast__foto-1"></div>
+            </figure>
+            <!-- <div class="podcast__foto podcast__foto-1"></div> -->
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
                   <!-- time -->
-                  <p class="podcast__time">15:43</p>
-                  <p class="podcast__title">Европа. XIX век</p>
-                  <p class="podcast__autor">Дмитрий Гутенберг</p>
+                  <time class="podcast__time fs12">15:43</time>
+                  <span class="podcast__title fs20">Европа. XIX век</span>
+                  <span class="podcast__autor">Дмитрий Гутенберг</span>
                 </div>
                 <!-- <div class="podcast__text"> -->
-                  <button class="podcast__play">
+                  <button class="btn podcast__play">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
@@ -197,197 +197,267 @@
               </ul>
             </div>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-2"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>5:32</p>
-                <p>О музыке</p>
-                <p>Дмитрий Гутенберг</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast2.png" alt="">
+              <figcaption class="podcast__date">
+                <time>11 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">5:32</time>
+                  <span class="podcast__title fs20">О музыке</span>
+                  <span class="podcast__autor">Дмитрий Гутенберг</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">207</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">34</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">18</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">207</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">34</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">18</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-3"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>8:54</p>
-                <p>Люди сегодня</p>
-                <p>Анна Васильева</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast3.png" alt="">
+              <figcaption class="podcast__date">
+                <time>8 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">8:54</time>
+                  <span class="podcast__title fs20">Люди сегодня</span>
+                  <span class="podcast__autor">Анна Васильева</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">104</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">54</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">42</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">104</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">54</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">42</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-4"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>9:04</p>
-                <p>Хэллоу, Африка!</p>
-                <p>Пётр Дмитриевский</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast4.png" alt="">
+              <figcaption class="podcast__date">
+                <time>5 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">9:04</time>
+                  <span class="podcast__title fs20">Хэллоу, Африка!</span>
+                  <span class="podcast__autor">Пётр Дмитриевский</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">87</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">44</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">5</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">87</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">44</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">5</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-5"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>7:03</p>
-                <p>Обо всём</p>
-                <p>Пётр Дмитриевский</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast5.png" alt="">
+              <figcaption class="podcast__date">
+                <time>2 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">7:03</time>
+                  <span class="podcast__title fs20">>Обо всём</span>
+                  <span class="podcast__autor">Пётр Дмитриевский</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">64</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">30</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">8</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">64</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">30</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">8</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-6"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>9:15</p>
-                <p>Физика цвета</p>
-                <p>Татьяна Флеганова</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast6.png" alt="">
+              <figcaption class="podcast__date">
+                <time>28 мая</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">9:15</time>
+                  <span class="podcast__title fs20">Физика цвета</span>
+                  <span class="podcast__autor">Татьяна Флеганова</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">58</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">29</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">14</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">58</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">29</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">14</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-7"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>16:04</p>
-                <p>Источник звука</p>
-                <p>Пётр Дмитриевский</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast7.png" alt="">
+              <figcaption class="podcast__date">
+                <time>22 мая</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">16:04</time>
+                  <span class="podcast__title fs20">Источник звука</span>
+                  <span class="podcast__autor">Пётр Дмитриевский</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">55</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">20</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">12</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">55</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">20</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">12</span>
-              </li>
-            </ul>
           </li>
-          <li class="podcasts__item">
-            <div class="podcasts__foto podcasts__foto-8"></div>
-            <div class="podcasts__info">
-              <div class="info_l">
-                <p>6:55</p>
-                <p>Правила этикета</p>
-                <p>Татьяна Флеганова</p>
+          <li class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast8.png" alt="">
+              <figcaption class="podcast__date">
+                <time>18 мая</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">6:55</time>
+                  <span class="podcast__title fs20">Правила этикета</span>
+                  <span class="podcast__autor">Татьяна Флеганова</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
               </div>
-              <div class="info_r">
-                <img src="img/play_btn.svg" alt="">
-              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">24</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">54</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">42</span>
+                </li>
+              </ul>
             </div>
-            <ul class="podcasts__action">
-              <li class="action__played">
-                <img class="played__icon" src="img/played.svg" alt="">
-                <span class="played__num">24</span>
-              </li>
-              <li class="action__liked">
-                <img class="liked__icon" src="img/liked.svg" alt="">
-                <span class="liked__num">54</span>
-              </li>
-              <li class="action__shared">
-                <img class="shared__icon" src="img/share.svg" alt="">
-                <span class="shared__num">42</span>
-              </li>
-            </ul>
           </li>
         </ul>
-        <button class="btn podcasts__btn">
+        <button class="btn btn-big btn-big-secondary podcasts__btn">
           Ещё подкасты
         </button>
       </div>
@@ -413,10 +483,11 @@
         </div>
         <div class="broadcasts__archive">
           <img class="archive__img" src="/img/mic.png" alt="">
-          <button id="" name="login" class="login__btn">
+          <a href="#" role="button" class="btn btn-small archive__link">
             <span><img src="/img/layers.svg" alt=""></span>
             Архив
-          </button>
+          </a>
+
           <p class="archive__desc">
             В архив попадают все передачи, которые вы пропустили! Enjoy:)
           </p>
@@ -679,7 +750,9 @@
               Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор
               музея «Гараж», коим является с 2016 года.
             </p>
-            <a class="guest__link" href="">Эфиры с гостем</a>
+            <a href="#" role="button" class="btn btn-small guest__link">
+              Эфиры с гостем
+            </a>
           </div>
         </div>
       </div>
@@ -883,12 +956,12 @@
           <p class="wave__price">
             2 800 ₽
           </p>
-          <button class="wave__yandex">
+          <a href="#" role="button" class="btn btn-big wave__yandex">
             <span class="yandex__icon">
               <img src="./img/yandex_full.svg" alt="">
             </span>
             Купить на Яндекс.Маркет
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -976,7 +1049,7 @@
           <textarea name="message" placeholder="Что скажете?" class="input form__input form__input-massage"></textarea>
           <input type="text" name="name" placeholder="Имя" class="input form__input">
           <input type="email" name="e-mail" placeholder="Email" class="input form__input">
-          <button type="submit" class="btn form__btn">
+          <button type="submit" class="btn btn-big btn-big-primary form__btn">
               Отправить
           </button>
           <span>
