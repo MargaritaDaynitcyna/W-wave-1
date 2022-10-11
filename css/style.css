@@ -716,7 +716,9 @@ margin-bottom: 30px;
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
-  height: 723px;
+  align-content: space-between;
+  /* height: 743px; */
+  max-height: 821px;
 
 }
 
@@ -727,6 +729,11 @@ margin-bottom: 30px;
 .genre__title {
 color: #A1A6B4;
 margin-bottom: 8px;
+}
+.genre__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .playlists__notice {
@@ -744,17 +751,32 @@ margin-bottom: 8px;
   width: 67%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
   /* grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 224px 224px 224px;
   gap: 30px; */
 }
 
 .music-band {
-  height: 224px;
-  width: 21%;
-}
+  /* height: 224px;
+  width: 21%; */
+  margin-bottom: 30px;
+  margin-right: 30px;
+  align-self: stretch;
+    flex: 1 1 20%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
+
+}
+.music-band:nth-child(4n) {
+  margin-right: 0px;
+}
+.music-band:nth-last-child(-n+4) {
+  margin-bottom: 0px;
+}
 .music-band__foto {
   position: relative;
   width: 100%;
@@ -841,6 +863,7 @@ margin-bottom: 8px;
 .music-band__info {
   border: 1px solid #E6E8EC;
   padding: 16px;
+  height: calc(100% - 160px);
 }
 .music-band__name {
   font-weight: 500;
@@ -850,16 +873,19 @@ margin-bottom: 8px;
 }
 
 /* ______________ */
+.wave {
+  background: #292E39;
+  color: #FFFFFF;
+}
 .wave__container {
   outline: 1px solid blue;
-  display: grid;
-  grid-template-columns: 58% 39%;
+  display: flex;
   gap: 30px;
 }
 
 .wave__img {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 562px;
   background-image: url('../img/old_radio.png');
   background-repeat: no-repeat;
@@ -878,12 +904,31 @@ margin-bottom: 8px;
   background-position: bottom;
 }
 
+.wave__info {
+  width: 41%;
+}
 .wave__title {
-  font-size: 48px;
+  color: #F0D288;
+  margin-bottom: 19px;
 }
 
 .wave__line {
-  margin: 19px 0;
+  margin-bottom: 19px;
+}
+.wave__text {
+  line-height: 29px;
+}
+.wave__text-1 {
+  margin-bottom: 12px;
+}
+.wave__text-2 {
+  margin-bottom: 30px;
+  letter-spacing: -0.1px;
+}
+.wave__price {
+  font-weight: 500;
+font-size: 30px;
+margin-bottom: 30px;
 }
 
 .wave__yandex {
