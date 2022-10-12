@@ -58,23 +58,18 @@
           </div>
         </div>
       </div>
-<!--
+
       <div id="modal" class="modal">
          <div class="modal__container">
-          <button class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
+          <!--    JS    -->
+          <button id="" class="modal__close" onclick="document.getElementById('modal').style.display = 'none';">
           </button>
           <h2 class="section-title modal__title">Вход</h2>
-          <p class="modal__text">
+          <p class="modal__text fs20">
             Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
           </p>
-          <form action="#" autocomplete="on" method="POST" class="modal__form">
-              <input type="text" name="login" placeholder="Логин" class="input form__input">
-              <input type="text" name="password" placeholder="Пароль" class="input form__input">
-              <button type="submit" class="btn btn-big btn-big-primaryform__btn">
-                  Войти
-              </button>
-            </form>
-          <p class="modal__help">Войти с помощью:</p>
+
+          <p class="modal__help fs20">Войти с помощью:</p>
           <ul class="social guest__social">
             <li class="social__item">
               <a class="social__link" href="">
@@ -93,7 +88,7 @@
             </li>
           </ul>
          </div>
-      </div> -->
+      </div>
 
       <div class="header-bottom">
         <div class="container header-bottom__container">
@@ -319,7 +314,7 @@
               <div class="podcast__desc">
                 <div class="podcast__text">
                   <time class="podcast__time fs12">7:03</time>
-                  <span class="podcast__title fs20">>Обо всём</span>
+                  <span class="podcast__title fs20">Обо всём</span>
                   <span class="podcast__autor">Пётр Дмитриевский</span>
                 </div>
                   <button class="btn podcast__play">
@@ -470,10 +465,10 @@
             Передачи
           </h2>
           <div class="broadcasts__select">
-            <p class="select__autor">
+            <p class="select__subtitle">
               Автор:
             </p>
-            <select class="select__select" name="select">
+            <select class="select__autor" name="autor">
               <option value="value1" selected>Дмитрий Гутенберг</option>
               <option value="value2">Татьяна Флеганова</option>
               <option value="value3">Анна Васильева</option>
@@ -764,28 +759,32 @@
           <h2 class="section-title playlists__title">
             Плейлисты
           </h2>
-          <form class="playlists__genre">
-            <p class="genre__title">
-              Жанр
-            </p>
-            <div class="genre__list">
-              <input checked type="radio" id="genreChoice1" name="genre" value="post-punk">
-              <label class="fs20" for="genreChoice1">Постпанк</label>
-              <input type="radio" id="genreChoice2" name="genre" value="hardcore">
-              <label class="fs20" for="genreChoice2">Хардкор</label>
-              <input type="radio" id="genreChoice3" name="genre" value="punk">
-              <label class="fs20" for="genreChoice3">Панк-рок</label>
-              <input type="radio" id="genreChoice4" name="genre" value="rock">
-              <label class="fs20" for="genreChoice4">Рок</label>
-              <input type="radio" id="genreChoice5" name="genre" value="progressive">
-              <label class="fs20" for="genreChoice5">Прогрессивный рок</label>
-              <input type="radio" id="genreChoice6" name="genre" value="electronic">
-              <label class="fs20" for="genreChoice6">Электронная музыка</label>
-              <input type="radio" id="genreChoice7" name="genre" value="classical">
-              <label class="fs20" for="genreChoice7">Классическая музыка</label>
-              <input type="radio" id="genreChoice8" name="genre" value="sounds">
-              <label class="fs20" for="genreChoice8">Звуки природы и шум города</label>
-            </div>
+          <!-- ?! -->
+          <form action="#" method="GET" class="playlists__genre">
+            <fieldset>
+              <legend class="genre__title">
+                Жанр
+              </legend>
+              <!-- form ? -->
+              <div class="genre__list">
+                <input checked type="radio" id="genreChoice1" name="genre" value="post-punk">
+                <label class="fs20" for="genreChoice1">Постпанк</label>
+                <input type="radio" id="genreChoice2" name="genre" value="hardcore">
+                <label class="fs20" for="genreChoice2">Хардкор</label>
+                <input type="radio" id="genreChoice3" name="genre" value="punk">
+                <label class="fs20" for="genreChoice3">Панк-рок</label>
+                <input type="radio" id="genreChoice4" name="genre" value="rock">
+                <label class="fs20" for="genreChoice4">Рок</label>
+                <input type="radio" id="genreChoice5" name="genre" value="progressive">
+                <label class="fs20" for="genreChoice5">Прогрессивный рок</label>
+                <input type="radio" id="genreChoice6" name="genre" value="electronic">
+                <label class="fs20" for="genreChoice6">Электронная музыка</label>
+                <input type="radio" id="genreChoice7" name="genre" value="classical">
+                <label class="fs20" for="genreChoice7">Классическая музыка</label>
+                <input type="radio" id="genreChoice8" name="genre" value="sounds">
+                <label class="fs20" for="genreChoice8">Звуки природы и шум города</label>
+              </div>
+            </fieldset>
           </form>
         </div>
         <div class="playlists__notice">
@@ -973,10 +972,10 @@
             <h2 class="section-title about-us__title">
               О нас
             </h2>
-            <p class="about-us__subtitle">
+            <p class="about-us__subtitle fs20">
               Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
             </p>
-            <p class="about-us__text">
+            <p class="about-us__text fs20">
               Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
             </p>
           </div>
@@ -990,8 +989,10 @@
 
         <ul class="about-us__people">
           <li class="person">
-            <div class="person__foto person__foto-1"></div>
-            <p class="person__name">
+            <div class="person__foto person__foto-1">
+              <!-- <img src="./img/us_dmitri.png" alt=""> -->
+            </div>
+            <p class="person__name fs20">
               Дмитрий Гутенберг
             </p>
             <p class="person__description">
@@ -1000,7 +1001,7 @@
           </li>
           <li class="person">
             <div class="person__foto person__foto-2"></div>
-            <p class="person__name">
+            <p class="person__name fs20">
               Анна Васильева
             </p>
             <p class="person__description">
@@ -1009,7 +1010,7 @@
           </li>
           <li class="person">
             <div class="person__foto person__foto-3"></div>
-            <p class="person__name">
+            <p class="person__name fs20">
               Пётр Дмитриевский
             </p>
             <p class="person__description">
@@ -1018,7 +1019,7 @@
           </li>
           <li class="person">
             <div class="person__foto person__foto-4"></div>
-            <p class="person__name">
+            <p class="person__name fs20">
               Татьяна Флеганова
             </p>
             <p class="person__description">
@@ -1027,7 +1028,7 @@
           </li>
           <li style="display: none" class="person">
             <div class="person__foto person__foto-5"></div>
-            <p class="person__name">
+            <p class="person__name fs20">
               Фёдор Прокопьев
             </p>
             <p class="person__description">
@@ -1036,7 +1037,7 @@
           </li>
           <li style="display: none" class="person">
             <div class="person__foto person__foto-6"></div>
-            <p class="person__name">
+            <p class="person__name fs20">
               Светлана Кортнева
             </p>
             <p class="person__description">
@@ -1045,10 +1046,13 @@
           </li>
         </ul>
 
-        <form action="#" autocomplete="on" method="POST" class="form about-us__form">
-          <textarea name="message" placeholder="Что скажете?" class="input form__input form__input-massage"></textarea>
-          <input type="text" name="name" placeholder="Имя" class="input form__input">
-          <input type="email" name="e-mail" placeholder="Email" class="input form__input">
+        <!-- required/ min=/ max=/  -->
+        <form action="https://mail.ru" autocomplete="on" method="POST" class="form about-us__form">
+          <!-- form-top -->
+          <textarea name="message" placeholder="Что скажете?" required class="input form__input form__input-massage fs20"></textarea>
+          <input type="text" name="name" placeholder="Имя" required class="input form__input form__input-name fs20">
+          <input type="email" name="e-mail" placeholder="Email" required class="input form__input form__input-email fs20">
+          <!-- form-bottom -->
           <button type="submit" class="btn btn-big btn-big-primary form__btn">
               Отправить
           </button>
@@ -1056,6 +1060,15 @@
             <input type="checkbox" id="check" name="agree" checked="" class="checkbox" role="checkbox" aria-checked="true">
             <label for="check" class="checkbox-text">Согласен на обработку персональных данных</label>
           </span>
+      </form>
+
+
+      <form action="#" autocomplete="on" method="POST" class="modal__form">
+        <input type="text" name="login" placeholder="Логин" required class="input form__input form__input-login fs20">
+        <input type="password" name="password" placeholder="Пароль" required class="input form__input form__input-pass fs20">
+        <button type="submit" class="btn btn-big btn-big-primary form__btn">
+            Войти
+        </button>
       </form>
 
       </div>

@@ -314,6 +314,7 @@ li {
 
 /* !___________________ */
 .modal {
+  display: none;
   background: rgba(128, 128, 128, 0.9);
   top: 0;
   left: 0;
@@ -325,12 +326,13 @@ li {
 
 .modal__container {
   position: relative;
-  max-width: 704px;
-  height: 535px;
+  max-width: 824px;
+  height: 655px;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px;
+  color: #FFFFFF;
   background: #121723;
 }
 
@@ -348,13 +350,24 @@ li {
   background-size: cover;
   cursor: pointer;
 }
+.modal__text {
+  margin-bottom: 30px;
+}
+.modal__register-link {
+  color: #6D31EE;
 
+}
 .modal__form {
-  width: 70%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 30px 0;
+  margin-bottom: 30px;
+}
+.modal__help {
+  padding-top: 30px;
+  border-top: 1px solid red;
+  margin-bottom: 30px;
 }
 
 /* ! Podcasts */
@@ -498,12 +511,13 @@ li {
 .broadcasts__info {
   width: 23%;
 }
-.select__autor {
+.select__subtitle {
   color: #A1A6B4;
   margin-bottom: 8px;
 }
-.select__select {
-  width: 255px;
+.select__autor {
+  width: 100%;
+  max-width: 255px;
   height: 40px;
   background: #E6E8EC;
   border-radius: 10px;
@@ -945,12 +959,25 @@ margin-bottom: 30px;
 }
 
 .about-us__info {
-  display: grid;
-  grid-template-columns: 57% 40%;
+  display: flex;
   gap: 30px;
+  margin-bottom: 30px;
 }
-
+.about-us__left {
+  width: 58%;
+ }
+ .about-us__subtitle {
+  font-weight: 700;
+line-height: 30px;
+color: #A1A6B4;
+margin-bottom: 8px;
+ }
+ .about-us__text {
+  color: #A1A6B4;
+  line-height: 32px;
+ }
 .about-us__right {
+  width: 40%;
   height: 290px;
   display: flex;
   gap: 30px;
@@ -976,10 +1003,11 @@ margin-bottom: 30px;
 }
 
 .about-us__people {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   gap: 30px;
+}
+.person{
+  flex: 0 1 25%;
 }
 
 .person__foto {
@@ -1013,11 +1041,14 @@ margin-bottom: 30px;
 }
 
 .person__name {
+  font-weight: 500;
   margin-top: 30px;
+  margin-bottom: 8px;
 }
 
 .person__description {
-  margin-top: 8px;
+  line-height: 24px;
+color: #A1A6B4;
 }
 
 .about-us__form {
@@ -1025,38 +1056,47 @@ margin-bottom: 30px;
 }
 
 .form {
-  max-width: 920px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 70px 70px 15px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+.about-us__form {
+  max-width: 920px;
 }
 
 .input {
   border: 1px solid #FFFFFF;
   border-radius: 40px;
   background-color: #121723;
+  color: #A1A6B4;
   padding: 25px 32px;
 }
 
 .form__input-massage {
-  grid-column: 1/3;
+  width: 100%;
+  height: 150px;
   border-radius: 30px;
   padding: 30px 32px;
+  resize: none;
 }
-
+.form__input-name,
+.form__input-email {
+  flex: 0 1 48.3%;
+}
+.form__btn {
+  width: fit-content;
+}
 /* ____________ */
 .footer {
   height: 323px;
+  padding-bottom: 0;
   background: #292E39;
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
-  height: 88px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 
 .footer__link {
@@ -1064,12 +1104,19 @@ margin-bottom: 30px;
 }
 
 .footer__right {
+  height: 88px;
   width: 445px;
-  list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
+
+  /* display: flex;
+  height: 88px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  column-gap: 109px; */
 }
 
 .footer__item {
@@ -1088,7 +1135,6 @@ margin-bottom: 30px;
 
 .footer__copyright {
   text-align: center;
-  font-size: 16px;
   color: #A1A6B4;
   padding: 10px 0;
 }
