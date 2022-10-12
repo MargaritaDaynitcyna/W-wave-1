@@ -1083,8 +1083,19 @@ color: #A1A6B4;
 .form__input-email {
   flex: 0 1 48.3%;
 }
+.form__bottom {
+  display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .form__btn {
   width: fit-content;
+}
+.checkbox-text {
+  font-weight: 500;
+}
+.checkbox-text input {
+  margin-right: 8px;
 }
 /* ____________ */
 .footer {

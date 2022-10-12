@@ -1053,13 +1053,19 @@
           <input type="text" name="name" placeholder="Имя" required class="input form__input form__input-name fs20">
           <input type="email" name="e-mail" placeholder="Email" required class="input form__input form__input-email fs20">
           <!-- form-bottom -->
-          <button type="submit" class="btn btn-big btn-big-primary form__btn">
+          <div class="form__bottom">
+            <button type="submit" class="btn btn-big btn-big-primary form__btn">
               Отправить
-          </button>
-          <span>
-            <input type="checkbox" id="check" name="agree" checked="" class="checkbox" role="checkbox" aria-checked="true">
-            <label for="check" class="checkbox-text">Согласен на обработку персональных данных</label>
-          </span>
+            </button>
+            <span>
+
+              <label for="check" class="checkbox-text fs12">
+                <input type="checkbox" id="check" name="agree" checked="" class="checkbox" role="checkbox" aria-checked="true">
+                Согласен на обработку персональных данных
+              </label>
+            </span>
+          </div>
+
       </form>
 
 
