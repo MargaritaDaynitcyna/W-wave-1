@@ -68,7 +68,13 @@
           <p class="modal__text fs20">
             Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
           </p>
-
+          <form action="#" autocomplete="on" method="POST" class="modal__form">
+            <input type="text" name="login" placeholder="Логин" required class="input form__input form__input-login fs20">
+            <input type="password" name="password" placeholder="Пароль" required class="input form__input form__input-pass fs20">
+            <button type="submit" class="btn btn-big btn-big-primary form__btn">
+                Войти
+            </button>
+          </form>
           <p class="modal__help fs20">Войти с помощью:</p>
           <ul class="social guest__social">
             <li class="social__item">
@@ -451,8 +457,83 @@
               </ul>
             </div>
           </li>
+          <!--  -->
+          <li style="display:none;" class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast2.png" alt="">
+              <figcaption class="podcast__date">
+                <time>0 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">5:32</time>
+                  <span class="podcast__title fs20">podcast__title</span>
+                  <span class="podcast__autor">Дмитрий Гутенберг</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
+              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">100</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">100</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">100</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li style="display:none;" class="podcast podcasts__item">
+            <figure class="podcast__foto">
+              <img src="./img/podcast2.png" alt="">
+              <figcaption class="podcast__date">
+                <time>0 июня</time>
+              </figcaption>
+            </figure>
+            <div class="podcast__info">
+              <div class="podcast__desc">
+                <div class="podcast__text">
+                  <time class="podcast__time fs12">5:32</time>
+                  <span class="podcast__title fs20">podcast__title</span>
+                  <span class="podcast__autor">Дмитрий Гутенберг</span>
+                </div>
+                  <button class="btn podcast__play">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                      <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                    </svg>
+                  </button>
+              </div>
+              <ul class="podcast__action">
+                <li class="action__played">
+                  <img class="played__icon" src="img/played.svg" alt="">
+                  <span class="played__num">100</span>
+                </li>
+                <li class="action__liked">
+                  <img class="liked__icon" src="img/liked.svg" alt="">
+                  <span class="liked__num">100</span>
+                </li>
+                <li class="action__shared">
+                  <img class="shared__icon" src="img/share.svg" alt="">
+                  <span class="shared__num">100</span>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
-        <button class="btn btn-big btn-big-secondary podcasts__btn">
+        <button class="btn btn-big btn-big-secondary podcasts__btn" onclick="for (pod of document.querySelectorAll('.podcasts__item')) {pod.style.display='flex'}">
           Ещё подкасты
         </button>
       </div>
@@ -965,7 +1046,7 @@
       </div>
     </section>
 
-    <section id="about-us"class="about-us section-offset">
+    <section id="about-us" class="about-us section-offset">
       <div class="container about-us__container">
         <div class="about-us__info">
           <div class="about-us__left">
@@ -1066,15 +1147,6 @@
             </span>
           </div>
 
-      </form>
-
-
-      <form action="#" autocomplete="on" method="POST" class="modal__form">
-        <input type="text" name="login" placeholder="Логин" required class="input form__input form__input-login fs20">
-        <input type="password" name="password" placeholder="Пароль" required class="input form__input form__input-pass fs20">
-        <button type="submit" class="btn btn-big btn-big-primary form__btn">
-            Войти
-        </button>
       </form>
 
       </div>
