@@ -119,6 +119,7 @@ li {
 .btn {
   padding: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 .btn-small {
   color: inherit;
@@ -214,6 +215,9 @@ li {
     gap: 80px; */
 }
 
+.logo__img {
+  fill: var(--light_black);
+}
 .header__nav {
   flex-basis: 57.4%;
 }
@@ -248,11 +252,26 @@ li {
 }
 
 .search__btn {
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
   background-color: white;
   border: none;
+  transition: 0.3s;
 }
+/* .search__icon>path {
+stroke: var(--primary);
+}
+.search__btn:hover {
+    stroke: var(--primary_light);
+}
+ path:hover {
+  stroke: var(--primary_light);
+  }
+   path:focus {
+    stroke: var(--primary_light);
+    } path:active {
+      stroke: var(--primary_shade);
+      } */
 
 .login__btn {
   width: 104px;
@@ -295,11 +314,25 @@ li {
   gap: 8px;
 }
 
-.early__icon,
-.now__icon {
-  width: 20px;
-  height: 20px;
+.air__play {
+  margin: 0;
+    border: none;
+    background-color: var(--white);
 }
+
+.air__icon{
+fill: var(--text_grey);
+transition: 0.3s;
+}
+.air__icon:hover{
+  fill: var(--primary);
+  }
+  .air__icon:active{
+    fill: var(--primary_shade);
+    }
+    .air__icon:focus{
+      fill: var(--primary_light);
+      }
 
 .age {
   background-color: grey;
@@ -995,7 +1028,7 @@ margin-bottom: 30px;
 
 .wave__yandex {
   color:var(--promo_color);
-  border: 2px solidvar(--promo_color);
+  border: 2px solid var(--promo_color);
   padding-right: 13.5px;
     padding-left: 13.5px
 }
@@ -1157,7 +1190,9 @@ color: var(--text_grey);
   justify-content: space-between;
 
 }
-
+.footer__logo {
+  fill: var(--white);
+}
 .footer__link {
   color: white;
 }
