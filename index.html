@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="./img/mic.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/choices.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -65,7 +67,7 @@
             </div>
             <!--    JS    -->
             <div class="header__login">
-              <button id="" name="login" class="btn btn-small login__btn" onclick="document.getElementById('modal').style.display = 'block';">
+              <button id="login" name="login" class="btn btn-small login__btn" onclick="document.getElementById('modal').style.display = 'block';">
                 Вход
               </button>
             </div>
@@ -76,7 +78,7 @@
       <div id="modal" class="modal">
          <div class="modal__container">
           <!--    JS    -->
-          <button id="" class="btn modal__close-btn" onclick="document.getElementById('modal').style.display = 'none';">
+          <button id="closeModal" class="btn modal__close-btn" onclick="document.getElementById('modal').style.display = 'none';">
             <svg class="modal__close-icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21" cy="21" r="19.5" stroke-width="3"/>
               <path d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12" stroke-width="3"/>
@@ -124,7 +126,7 @@
 
       <div class="header-bottom">
         <div class="container header-bottom__container">
-        <nav id="" class="topics">
+        <nav id="nav" class="topics">
           <ul class="topics__list">
             <li class="topics__item"><a href="#" class="topics__link">Новости</a></li>
             <li class="topics__item"><a href="#" class="topics__link">Блоги</a></li>
@@ -195,7 +197,7 @@
             <figure class="podcast__foto">
               <img src="./img/podcast1.png" alt="">
               <figcaption class="podcast__date">
-                <time>14 июня</time>
+                <time datetime="2022-06-14">14 июня</time>
               </figcaption>
             </figure>
             <!-- <div class="podcast__foto podcast__foto-1"></div> -->
@@ -203,7 +205,7 @@
               <div class="podcast__desc">
                 <div class="podcast__text">
                   <!-- time -->
-                  <time class="podcast__time fs12">15:43</time>
+                  <time datetime="15:43" class="podcast__time fs12">15:43</time>
                   <span class="podcast__title fs20">Европа. XIX век</span>
                   <span class="podcast__autor">Дмитрий Гутенберг</span>
                 </div>
@@ -242,13 +244,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast2.png" alt="">
               <figcaption class="podcast__date">
-                <time>11 июня</time>
+                <time datetime="2022-06-11">11 июня</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">5:32</time>
+                  <time datetime="05:32" class="podcast__time fs12">5:32</time>
                   <span class="podcast__title fs20">О музыке</span>
                   <span class="podcast__autor">Дмитрий Гутенберг</span>
                 </div>
@@ -285,13 +287,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast3.png" alt="">
               <figcaption class="podcast__date">
-                <time>8 июня</time>
+                <time datetime="2022-06-08">8 июня</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">8:54</time>
+                  <time datetime="08:54" class="podcast__time fs12">8:54</time>
                   <span class="podcast__title fs20">Люди сегодня</span>
                   <span class="podcast__autor">Анна Васильева</span>
                 </div>
@@ -328,13 +330,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast4.png" alt="">
               <figcaption class="podcast__date">
-                <time>5 июня</time>
+                <time datetime="2022-06-05">5 июня</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">9:04</time>
+                  <time datetime="09:04" class="podcast__time fs12">9:04</time>
                   <span class="podcast__title fs20">Хэллоу, Африка!</span>
                   <span class="podcast__autor">Пётр Дмитриевский</span>
                 </div>
@@ -371,13 +373,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast5.png" alt="">
               <figcaption class="podcast__date">
-                <time>2 июня</time>
+                <time datetime="2022-06-02">2 июня</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">7:03</time>
+                  <time datetime="07:03" class="podcast__time fs12">7:03</time>
                   <span class="podcast__title fs20">Обо всём</span>
                   <span class="podcast__autor">Пётр Дмитриевский</span>
                 </div>
@@ -414,13 +416,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast6.png" alt="">
               <figcaption class="podcast__date">
-                <time>28 мая</time>
+                <time datetime="2022-05-28">28 мая</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">9:15</time>
+                  <time datetime="09:15" class="podcast__time fs12">9:15</time>
                   <span class="podcast__title fs20">Физика цвета</span>
                   <span class="podcast__autor">Татьяна Флеганова</span>
                 </div>
@@ -457,13 +459,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast7.png" alt="">
               <figcaption class="podcast__date">
-                <time>22 мая</time>
+                <time datetime="2022-05-22">22 мая</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">16:04</time>
+                  <time datetime="16:04" class="podcast__time fs12">16:04</time>
                   <span class="podcast__title fs20">Источник звука</span>
                   <span class="podcast__autor">Пётр Дмитриевский</span>
                 </div>
@@ -500,13 +502,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast8.png" alt="">
               <figcaption class="podcast__date">
-                <time>18 мая</time>
+                <time datetime="2022-05-18">18 мая</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">6:55</time>
+                  <time datetime="06:55" class="podcast__time fs12">6:55</time>
                   <span class="podcast__title fs20">Правила этикета</span>
                   <span class="podcast__autor">Татьяна Флеганова</span>
                 </div>
@@ -544,13 +546,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast2.png" alt="">
               <figcaption class="podcast__date">
-                <time>0 июня</time>
+                <time datetime="2022-07-30">30 июля</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">5:32</time>
+                  <time datetime="15:52" class="podcast__time fs12">15:52</time>
                   <span class="podcast__title fs20">podcast__title</span>
                   <span class="podcast__autor">Дмитрий Гутенберг</span>
                 </div>
@@ -587,13 +589,13 @@
             <figure class="podcast__foto">
               <img src="./img/podcast2.png" alt="">
               <figcaption class="podcast__date">
-                <time>0 июня</time>
+                <time datetime="2022-07-30">30 июля</time>
               </figcaption>
             </figure>
             <div class="podcast__info">
               <div class="podcast__desc">
                 <div class="podcast__text">
-                  <time class="podcast__time fs12">5:32</time>
+                  <time datetime="19:15" class="podcast__time fs12">19:15</time>
                   <span class="podcast__title fs20">podcast__title</span>
                   <span class="podcast__autor">Дмитрий Гутенберг</span>
                 </div>
@@ -1227,65 +1229,93 @@
             <img src="./img/star.svg" alt=""> -->
           </div>
         </div>
-
-        <ul class="about-us__people">
-          <li class="person">
-            <div class="person__foto person__foto-1">
-              <!-- <img src="./img/us_dmitri.png" alt=""> -->
+        <div class="about-us__people">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide person">
+                <div class="person__foto person__foto-1">
+                </div>
+                <p class="person__name fs20">
+                  Дмитрий Гутенберг
+                </p>
+                <p class="person__description">
+                  Эксперт (ну, почти) по всем вопросам (почти)
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="person__foto person__foto-2"></div>
+                  <p class="person__name fs20">
+                    Анна Васильева
+                  </p>
+                  <p class="person__description">
+                    Как я здесь оказалась? А главное — зачем?
+                  </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="person__foto person__foto-3"></div>
+                  <p class="person__name fs20">
+                    Пётр Дмитриевский
+                  </p>
+                  <p class="person__description">
+                    Господа! Внимание! Благодарю за внимание!
+                  </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="person__foto person__foto-4"></div>
+                <p class="person__name fs20">
+                  Татьяна Флеганова
+                </p>
+                <p class="person__description">
+                  Одна я в пальто стою красивая, а вокруг…
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="person__foto person__foto-5"></div>
+                <p class="person__name fs20">
+                  Фёдор Прокопьев
+                </p>
+                <p class="person__description">
+                  Привет! Я фотограф, музыкант, ведущий
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="person__foto person__foto-6"></div>
+                  <p class="person__name fs20">
+                    Светлана Кортнева
+                  </p>
+                  <p class="person__description">
+                    Художник-оформитель. Оформляю
+                  </p>
+              </div>
             </div>
-            <p class="person__name fs20">
-              Дмитрий Гутенберг
-            </p>
-            <p class="person__description">
-              Эксперт (ну, почти) по всем вопросам (почти)
-            </p>
-          </li>
-          <li class="person">
-            <div class="person__foto person__foto-2"></div>
-            <p class="person__name fs20">
-              Анна Васильева
-            </p>
-            <p class="person__description">
-              Как я здесь оказалась? А главное — зачем?
-            </p>
-          </li>
-          <li class="person">
-            <div class="person__foto person__foto-3"></div>
-            <p class="person__name fs20">
-              Пётр Дмитриевский
-            </p>
-            <p class="person__description">
-              Господа! Внимание! Благодарю за внимание!
-            </p>
-          </li>
-          <li class="person">
-            <div class="person__foto person__foto-4"></div>
-            <p class="person__name fs20">
-              Татьяна Флеганова
-            </p>
-            <p class="person__description">
-              Одна я в пальто стою красивая, а вокруг…
-            </p>
-          </li>
-          <li style="display: none" class="person">
-            <div class="person__foto person__foto-5"></div>
-            <p class="person__name fs20">
-              Фёдор Прокопьев
-            </p>
-            <p class="person__description">
-              Привет! Я фотограф, музыкант, ведущий
-            </p>
-          </li>
-          <li style="display: none" class="person">
-            <div class="person__foto person__foto-6"></div>
-            <p class="person__name fs20">
-              Светлана Кортнева
-            </p>
-            <p class="person__description">
-              Художник-оформитель. Оформляю
-            </p>
-          </li>
-        </ul>
+            <!-- <div class="swiper-pagination"></div> -->
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                      1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                      }
+                    },
+                  });
+        </script>
+
+
 
         <!-- required/ min=/ max=/  -->
         <form action="https://mail.ru" autocomplete="on" method="POST" class="form about-us__form">

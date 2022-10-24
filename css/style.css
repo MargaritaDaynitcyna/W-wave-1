@@ -1683,12 +1683,11 @@ transition: 0.3s;
 }
 
 .about-us__people {
-  display: flex;
-  gap: 30px;
+  position: relative;
 }
 
 .person {
-  flex: 0 1 25%;
+
 }
 
 .person__foto {
@@ -1731,6 +1730,32 @@ transition: 0.3s;
   line-height: 24px;
   color: var(--text_grey);
 }
+
+.swiper {
+  width: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: -65px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: -65px;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: url('../img/accordion_open.svg');
+  /* fill: var(--text_grey);
+  stroke: var(--text_grey); */
+}
+.swiper-button-next::after {
+  transform: rotate(-90deg);
+}
+.swiper-button-prev::after {
+  transform: rotate(90deg);
+}
+
 
 .about-us__form {
   margin-top: 30px;
