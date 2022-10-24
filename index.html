@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="./img/mic.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/choices.min.css">
-
+  <link rel="stylesheet" href="./css/accordion.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -781,171 +781,203 @@
           и люди науки, историки, филологи и много других интересных гостей!
         </p>
         <div class="guests__content">
-          <ul class="accordion guests__list">
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Блогеры
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+          <ul class="accordion-container accordion guests__list">
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Блогеры
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Ольга Мартынова
-                  <p style="display: none;" class="category__item-descr">
-                    Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии.
-                    Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор
-                    музея «Гараж», коим является с 2016 года.
-                  </p>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Ольга Мартынова
+                    <p style="display: none;" class="category__item-descr">
+                      Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии.
+                      Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор
+                      музея «Гараж», коим является с 2016 года.
+                    </p>
 
-                </li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Максим Сергеев</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Георгий Полуян</li>
-              </ul>
+                  </li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Максим Сергеев</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Георгий Полуян</li>
+                </ul>
+              </div>
             </li>
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Арт-критики
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Арт-критики
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul style="display: none;" class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Ольга Мартынова</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Георгий Полуян</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Максим Сергеев</li>
-              </ul>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Ольга Мартынова</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Георгий Полуян</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Максим Сергеев</li>
+                </ul>
+              </div>
             </li>
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Художники
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Художники
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul style="display: none;" class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Ольга Мартынова</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Георгий Полуян</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Максим Сергеев</li>
-              </ul>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Ольга Мартынова</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Георгий Полуян</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Максим Сергеев</li>
+                </ul>
+              </div>
             </li>
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Люди науки
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Люди науки
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul style="display: none;" class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Ольга Мартынова</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Георгий Полуян</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Максим Сергеев</li>
-              </ul>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Ольга Мартынова</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Георгий Полуян</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Максим Сергеев</li>
+                </ul>
+              </div>
             </li>
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Историки
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Историки
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul style="display: none;" class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Ольга Мартынова</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Георгий Полуян</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Максим Сергеев</li>
-              </ul>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Ольга Мартынова</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Георгий Полуян</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Максим Сергеев</li>
+                </ul>
+              </div>
             </li>
-            <li class="accordion__category">
-              <h3 class="category__header fs20">
-                Филологи
-                <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
-                </svg>
+            <li class="ac accordion__category">
+              <h3 class="ac-header category__header fs20">
+                <button type="button" class="ac-trigger">
+                  Филологи
+                  <svg class="category__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20" stroke-width="2"/>
+                    <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                </button>
               </h3>
-              <ul style="display: none;" class="category__list">
-                <li class="category__item">Сергей Денисов</li>
-                <li class="category__item">Матвей Мечников</li>
-                <li class="category__item">Константин Прусино</li>
-                <li class="category__item">Иван Калитников</li>
-                <li class="category__item">Евгений Войновский</li>
-                <li class="category__item">Ольга Мартынова</li>
-                <li class="category__item">Дмитрий Михалок</li>
-                <li class="category__item">Пётр Пиотровский</li>
-                <li class="category__item">Олег Свиридовский</li>
-                <li class="category__item">Владислав Кауперс</li>
-                <li class="category__item">Михаил Пожитников</li>
-                <li class="category__item">Георгий Полуян</li>
-                <li class="category__item">Денис Тельман</li>
-                <li class="category__item">Юрий Горин</li>
-                <li class="category__item">Максим Сергеев</li>
-              </ul>
+              <div class="ac-panel">
+                <ul class="category__list">
+                  <li class="category__item">Сергей Денисов</li>
+                  <li class="category__item">Матвей Мечников</li>
+                  <li class="category__item">Константин Прусино</li>
+                  <li class="category__item">Иван Калитников</li>
+                  <li class="category__item">Евгений Войновский</li>
+                  <li class="category__item">Ольга Мартынова</li>
+                  <li class="category__item">Дмитрий Михалок</li>
+                  <li class="category__item">Пётр Пиотровский</li>
+                  <li class="category__item">Олег Свиридовский</li>
+                  <li class="category__item">Владислав Кауперс</li>
+                  <li class="category__item">Михаил Пожитников</li>
+                  <li class="category__item">Георгий Полуян</li>
+                  <li class="category__item">Денис Тельман</li>
+                  <li class="category__item">Юрий Горин</li>
+                  <li class="category__item">Максим Сергеев</li>
+                </ul>
+              </div>
             </li>
           </ul>
+
+
+          <script src="./js/accordion.min.js"></script>
+<script>
+  new Accordion('.accordion-container');
+</script>
+
+
           <div class="guest guests__description">
             <div class="guest__img"></div>
             <ul class="social guest__social">
@@ -1291,8 +1323,18 @@
             <!-- <div class="swiper-pagination"></div> -->
 
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <svg class="swiper-button-prev__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle r="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 24 24)" stroke-width="2"/>
+              <path d="M26 32L18 24L26 16" stroke-width="2" stroke-linecap="square"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="swiper-button-next__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" transform="rotate(-90 24 24)" stroke-width="2"/>
+              <path d="M22 32L30 24L22 16" stroke-width="2" stroke-linecap="square"/>
+            </svg>
+          </div>
         </div>
 
 
