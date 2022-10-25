@@ -1030,23 +1030,55 @@
                 Жанр
               </legend>
               <!-- form ? -->
-              <div class="genre__list">
-                <input checked type="radio" id="genreChoice1" name="genre" value="post-punk">
-                <label class="fs20" for="genreChoice1">Постпанк</label>
-                <input type="radio" id="genreChoice2" name="genre" value="hardcore">
-                <label class="fs20" for="genreChoice2">Хардкор</label>
-                <input type="radio" id="genreChoice3" name="genre" value="punk">
-                <label class="fs20" for="genreChoice3">Панк-рок</label>
-                <input type="radio" id="genreChoice4" name="genre" value="rock">
-                <label class="fs20" for="genreChoice4">Рок</label>
-                <input type="radio" id="genreChoice5" name="genre" value="progressive">
-                <label class="fs20" for="genreChoice5">Прогрессивный рок</label>
-                <input type="radio" id="genreChoice6" name="genre" value="electronic">
-                <label class="fs20" for="genreChoice6">Электронная музыка</label>
-                <input type="radio" id="genreChoice7" name="genre" value="classical">
-                <label class="fs20" for="genreChoice7">Классическая музыка</label>
-                <input type="radio" id="genreChoice8" name="genre" value="sounds">
-                <label class="fs20" for="genreChoice8">Звуки природы и шум города</label>
+              <div class="genre__list" tabindex="0">
+                <label class="fs20 genre__item" for="genreChoice1">
+                  <input type="radio" id="genreChoice1" name="genre" class="genre__input" value="post-punk">
+                  <span class="genre__text">
+                    Постпанк
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice2">
+                  <input type="radio" id="genreChoice2" name="genre" class="genre__input" value="hardcore">
+                  <span class="genre__text">
+                    Хардкор
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice3">
+                  <input type="radio" id="genreChoice3" name="genre" class="genre__input" value="punk">
+                  <span class="genre__text">
+                    Панк-рок
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice4">
+                  <input type="radio" id="genreChoice4" name="genre" class="genre__input" value="rock">
+                  <span class="genre__text">
+                    Рок
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice5">
+                  <input type="radio" id="genreChoice5" name="genre" class="genre__input" value="progressive">
+                  <span class="genre__text">
+                    Прогрессивный рок
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice6">
+                  <input type="radio" id="genreChoice6" name="genre" class="genre__input" value="electronic">
+                  <span class="genre__text">
+                    Электронная музыка
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice7">
+                  <input type="radio" id="genreChoice7" name="genre" class="genre__input" value="classical">
+                  <span class="genre__text">
+                    Классическая музыка
+                  </span>
+                </label>
+                <label class="fs20 genre__item" for="genreChoice8">
+                  <input type="radio" id="genreChoice8" name="genre" class="genre__input" value="sounds">
+                  <span class="genre__text">
+                    Звуки природы и шум города
+                  </span>
+                </label>
               </div>
             </fieldset>
           </form>
@@ -1058,12 +1090,13 @@
           <p class="notice__copyright">
             <i>© 2021 | W-Wave</i>
           </p>
-          <div class="notice__age">
-            <div class="circle">18+</div>
+          <div class="fs12 notice__age">18+
+
+            <!-- <div class="circle">18+</div> -->
           </div>
         </div>
         <ul class="playlists__list">
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-1"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1074,7 +1107,7 @@
               </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-2"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1085,7 +1118,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-3"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1096,7 +1129,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-4"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1107,7 +1140,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-5"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1118,7 +1151,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-6"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1129,7 +1162,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-7"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1140,7 +1173,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-8"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1151,7 +1184,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-9"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1162,7 +1195,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-10"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1173,7 +1206,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-11"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1184,7 +1217,7 @@
             </p>
             </div>
           </li>
-          <li class="music-band">
+          <li class="music-band" tabindex="0">
             <div class="music-band__foto music-band__foto-12"></div>
             <div class="music-band__info">
               <p class="music-band__name">
@@ -1234,7 +1267,6 @@
               <span class="yandex__text">
                 Купить на Яндекс.Маркет
               </span>
-
           </a>
         </div>
       </div>
@@ -1360,11 +1392,17 @@
 
 
         <!-- required/ min=/ max=/  -->
-        <form action="https://mail.ru" autocomplete="on" method="POST" class="form about-us__form">
+        <form action="https://mail.ru" autocomplete="on" method="POST" class="form about-us__form" id="form">
           <!-- form-top -->
-          <textarea name="message" placeholder="Что скажете?" required class="input form__input form__input-massage fs20"></textarea>
-          <input type="text" name="name" placeholder="Имя" required class="input form__input form__input-name fs20">
-          <input type="email" name="e-mail" placeholder="Email" required class="input form__input form__input-email fs20">
+          <div class="form__input">
+            <textarea name="message" placeholder="Что скажете?" required class="input input__massage fs20"></textarea>
+          </div>
+          <div class="form__input">
+            <input type="text" name="name" placeholder="Имя" required class="input input__name fs20">
+          </div>
+          <div class="form__input">
+            <input type="email" name="e-mail" placeholder="Email" required class="input input__email fs20">
+          </div>
           <!-- form-bottom -->
           <div class="form__bottom">
             <button type="submit" class="btn btn-big btn-big-primary form__btn">
@@ -1381,6 +1419,85 @@
           </div>
 
       </form>
+      <script src="./js/just-validate.min.js"></script>
+      <script>
+        const validate = new window.JustValidate('#form', {
+          errorLabelStyle: {
+            color: 'var(--error)',
+          },
+          errorFieldStyle: {
+      border: '1px solid var(--error)',
+    },
+        });
+
+        validate
+          .addField('.input__massage', [{
+              rule: 'minLength',
+              value: 3,
+              errorMessage: "Ошибка",
+            },
+            {
+              rule: 'required',
+              errorMessage: 'Ошибка',
+            },
+          ])
+          .addField('.input__name', [{
+              rule: 'minLength',
+              value: 3,
+              errorMessage: "Ошибка"
+            },
+            {
+              rule: 'maxLength',
+              value: 30,
+              errorMessage: "Ошибка"
+            },
+            {
+              rule: 'required',
+              errorMessage: 'Ошибка',
+            },
+          ])
+          .addField('.input__email', [{
+              rule: 'required',
+              errorMessage: 'Ошибка',
+            },
+            {
+              rule: 'email',
+              errorMessage: 'Ошибка',
+            }
+          ])
+          .addField('#check', [
+    {
+      rule: 'required',
+      errorMessage: 'Ошибка',
+    },
+  ])
+
+          const validateLogin = new window.JustValidate('.modal__form');
+
+          validateLogin
+          .addField('.form__input-login', [{
+              rule: 'minLength',
+              value: 3,
+              errorMessage: "Ошибка"
+            },
+            {
+              rule: 'maxLength',
+              value: 30,
+              errorMessage: "Ошибка"
+            },
+            {
+              rule: 'required',
+              errorMessage: 'Ошибка',
+            },
+          ])
+          .addField('.form__input-pass', [{
+              rule: 'required',
+              errorMessage: 'Ошибка',
+            },{
+      rule: 'password',
+    },
+          ])
+      </script>
 
       </div>
     </section>
