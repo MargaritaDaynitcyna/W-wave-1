@@ -88,9 +88,13 @@
           <p class="modal__text fs20">
             Если у вас ещё нет аккаунта, <a class="modal__register-link" href="">зарегистрируйтесь</a>
           </p>
-          <form action="#" autocomplete="on" method="POST" class="modal__form">
-            <input type="text" name="login" placeholder="Логин" required class="input form__input form__input-login fs20">
-            <input type="password" name="password" placeholder="Пароль" required class="input form__input form__input-pass fs20">
+          <form action="#" autocomplete="on" method="POST" class="form modal__form">
+            <div class="form__input">
+              <input type="text" name="login" placeholder="Логин" required class="input input__login fs20">
+            </div>
+            <div class="form__input">
+              <input type="password" name="password" placeholder="Пароль" required class="input input__pass fs20">
+            </div>
             <button type="submit" class="btn btn-big btn-big-primary form__btn">
                 Войти
             </button>
@@ -1431,70 +1435,67 @@
         });
 
         validate
-          .addField('.input__massage', [{
-              rule: 'minLength',
-              value: 3,
-              errorMessage: "Ошибка",
-            },
+          .addField('.input__massage', [
             {
               rule: 'required',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Напишите сообщение',
             },
           ])
           .addField('.input__name', [{
               rule: 'minLength',
               value: 3,
-              errorMessage: "Ошибка"
+              errorMessage: "Слишком короткое имя"
             },
             {
               rule: 'maxLength',
               value: 30,
-              errorMessage: "Ошибка"
+              errorMessage: "Слишком длинное имя"
             },
             {
               rule: 'required',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Введите имя',
             },
           ])
           .addField('.input__email', [{
               rule: 'required',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Введите почту',
             },
             {
               rule: 'email',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Неверно указана почта',
             }
           ])
           .addField('#check', [
     {
       rule: 'required',
-      errorMessage: 'Ошибка',
+      errorMessage: 'Согласие обязательно',
     },
   ])
 
           const validateLogin = new window.JustValidate('.modal__form');
 
           validateLogin
-          .addField('.form__input-login', [{
+          .addField('.input__login', [{
               rule: 'minLength',
               value: 3,
-              errorMessage: "Ошибка"
+              errorMessage: "Слишком короткий логин"
             },
             {
               rule: 'maxLength',
               value: 30,
-              errorMessage: "Ошибка"
+              errorMessage: "Слишком длинный логин"
             },
             {
               rule: 'required',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Введите логин',
             },
           ])
-          .addField('.form__input-pass', [{
+          .addField('.input__pass', [{
               rule: 'required',
-              errorMessage: 'Ошибка',
+              errorMessage: 'Введите пароль',
             },{
       rule: 'password',
+      errorMessage: 'пароль',
     },
           ])
       </script>
