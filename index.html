@@ -32,7 +32,7 @@
             </a>
           </div>
           <div class="header__nav">
-            <button id="burgerMenu" name="Меню" class="btn burger__btn">
+            <button id="burger" name="Меню" class="btn burger__btn">
               <svg class="burger__img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="3" rx="1.5"/>
                 <rect y="21" width="24" height="3" rx="1.5"/>
@@ -40,10 +40,11 @@
               </svg>
             </button>
             <nav id="menu" class="nav">
-              <button id="closeMenu" name="Закрыть" class="nav__close">
-                <svg class="close" viewbox=" 0 0 10 10 ">
-                  <use xlink:href="#close"></use>
-                </svg>
+              <button id="close" name="Закрыть" class="btn nav__close">
+                <svg class="burger__img close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.5752" y="2.95406" width="24" height="3" rx="1.5" transform="rotate(45 4.5752 2.95406)" fill="#6D31EE"/>
+                  <rect x="21.5459" y="5.07538" width="24" height="3" rx="1.5" transform="rotate(135 21.5459 5.07538)" fill="#6D31EE"/>
+                  </svg>
               </button>
               <ul class="nav__list fs20">
                 <li class="nav__item"><a href="#podcasts" class="nav__link">Подкасты</a></li>
@@ -143,26 +144,38 @@
           </ul>
         </nav>
         <div class="air">
-          <div class="air__early">
-            <button class="btn air__play">
-              <svg class="air__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"/>
+          <div class="air__open">
+            <button class="btn air__open-btn">
+              <svg class="air__open-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7.5" cy="7.5" r="7.5"/>
+                <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
+                <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
               </svg>
+              Что в эфире?
             </button>
-            <div class="air__info">
-              <p class="air__title fs12">Ранее в эфире</p>
-              <p class="air__text">«Музыка»</p>
-            </div>
           </div>
-          <div class="air__now">
-            <button class="btn air__play">
-              <svg class="air__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"/>
-              </svg>
-            </button>
-            <div class="air__info">
-              <p class="air__title fs12">Сейчас в эфире</p>
-              <p class="air__text">«Как так?»</p>
+          <div class="air__player">
+            <div class="air__early">
+              <button class="btn air__play">
+                <svg class="air__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"/>
+                </svg>
+              </button>
+              <div class="air__info">
+                <p class="air__title fs12">Ранее в эфире</p>
+                <p class="air__text">«Музыка»</p>
+              </div>
+            </div>
+            <div class="air__now">
+              <button class="btn air__play">
+                <svg class="air__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"/>
+                </svg>
+              </button>
+              <div class="air__info">
+                <p class="air__title fs12">Сейчас в эфире</p>
+                <p class="air__text">«Как так?»</p>
+              </div>
             </div>
           </div>
         </div>
@@ -178,7 +191,7 @@
       <div class="container hero__container section-offset">
         <div class="hero__content">
           <h1 class="hero__title">
-            Радио <i>W-Wawe</i>
+            Радио <i>W&#8209;Wawe</i>
           </h1>
           <p class="hero__text">
             Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре.
@@ -1452,12 +1465,18 @@
         <script>
             const swiper = new Swiper(".swiper", {
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 20,
+                    freeMode: true,
                     navigation: {
                       nextEl: '.swiper-button-next',
                       prevEl: '.swiper-button-prev',
                     },
+
                     breakpoints: {
+                      651: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                      },
                       1025: {
                         slidesPerView: 4,
                         spaceBetween: 30,

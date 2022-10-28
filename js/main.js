@@ -1,7 +1,16 @@
 window.addEventListener('DOMContentLoaded', () => {
   showGuestInfo()
+  openMenu()
 })
 
+function openMenu () {
+  document.querySelector('#burger').addEventListener('click', () => {
+      document.querySelector('#menu').classList.add('is-open')
+  })
+  document.querySelector('#close').addEventListener('click',function() {
+      document.querySelector('#menu').classList.remove('is-open')
+  })
+}
 
 function showGuestInfo() {
   document.querySelectorAll('.category__item').forEach((item) => {

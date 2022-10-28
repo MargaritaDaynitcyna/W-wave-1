@@ -392,10 +392,12 @@ li {
   color: var(--primary_shade);
 }
 
-
 .air {
-  display: flex;
   flex-basis: 349px;
+}
+.air__player {
+  display: flex;
+
   padding: 10px 0;
   margin: 0 10px;
 }
@@ -488,8 +490,6 @@ li {
 
 .hero__btn {
   display: inline-block;
-  width: 245px;
-  height: 70px;
 }
 
 
@@ -999,9 +999,9 @@ li {
   height: 40px;
   padding: 12px 52px;
   margin-bottom: 12px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
 }
 
 .archive__desc {
@@ -2474,7 +2474,7 @@ li {
     display: none;
   }
   .topics {
-    flex-basis: 90%;
+    flex-basis: 91%;
   }
   .music-band {
     flex: 1 1 40%;
@@ -2489,6 +2489,10 @@ li {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-right: 114px;
+    padding-left: 114px;
+}
   .burger__btn {
     display: block;
     border: none;
@@ -2505,6 +2509,39 @@ li {
 .nav {
   display: none;
 }
+.is-open {
+position: absolute;
+    top: 60px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bc-grey);
+    padding: 106px 114px;
+    z-index: 4;
+}
+.is-open .nav__list {
+  width: 250px;
+  height: 188px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+
+}
+.is-open .nav__item {
+  margin-bottom: 64px;
+}
+.is-open .nav__item:nth-child(3n) {
+  margin-bottom: 0;
+}
+.nav__close {
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 114px;
+  border: none;
+}
+
 .header__other {
   width: 40%;
   order: 2;}
@@ -2519,6 +2556,11 @@ li {
     min-width: initial;
   }
 
+  .podcasts {
+    padding-bottom: 94px;
+}
+
+
   .broadcasts  {
     position: relative;
     padding-bottom: 30px;
@@ -2530,7 +2572,8 @@ li {
   width: 255px;
 }
 .broadcasts__cards {
-  margin-bottom: 30px;
+  margin-bottom: 62px;
+  padding-top: 17px;
 }
   .broadcasts__archive {
     position: initial;
@@ -2566,23 +2609,73 @@ bottom: 157px;
 border-top: 1px solid var(--bc-grey);
   }
 
-  .guests__text {
-    width: 100%;
-  }
-  .guests__content {
-    flex-direction: column;
-  }
 
+  .category__item {
+    padding-bottom: 30px;}
+    .ac .ac-trigger {
+      padding-right: 5px;
+    }
+    .guests__list {
+      margin-bottom: 20px;
+    }
+    .guests__text {
+      width: 100%;
+    }
+    .guests__content {
+      flex-direction: column;
+    }
   .guest__img {
     height: 220px;
     background-size:cover;
   }
+  .guest__description {
+    max-width: 398px;
+    margin-bottom: 28px;
+  }
+
+  .playlists__info {
+    width: 100%;
+    margin-bottom: 19px;
+}
+.genre__title {
+ margin-bottom: 8px;
+}
+.genre__list {
+  gap: 30px;
+  height: 210px;
+}
+.genre__item:nth-child(-n+4) {
+  width: 133px;
+}
+.genre__text {
+  padding-left: 36px;
+}
+.genre__item:nth-last-child(-n+4) {
+  width: calc(100% - 176px);
+}
+.genre__item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wave.section-offset {
+  padding-top: 54px;
+}
   .wave__container {
     flex-direction: column;
   }
   .wave__img, .wave__info {
     width: 100%;
   }
+  .wave__img {
+    height: 474px;
+    margin-bottom: 20px;
+  }
+  .wave__title {
+    max-width: 441px;
+  }
+  .wave__text-2 {
+    max-width: 523px;}
   .about-us__info {
     flex-direction: column;
   }
@@ -2596,10 +2689,322 @@ border-top: 1px solid var(--bc-grey);
   }
   .spiral {
     display: block;
-    width: 80%;
+    margin-left: -100px;
+    width: 92%;
+    max-width: none;
+    background-image: url('../img/spiral_2.svg');
+    background-size: cover;
   }
   .star {
     width: 20%;
   }
-
+  .swiper-button-next, .swiper-button-prev {
+    top: 35%;
+}
+.about-us__form {
+  margin-top: 30px;
+}
+  .footer {
+    height: auto;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 77px;
+}
+.footer__right {
+  width: 100%;
+  height: 106px;
+}
+.footer__item {
+  padding-bottom: 29px;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__social {
+  width: 150px;
+}
+.footer__social .social__icon {
+  width: 36px;
+  height: 36px;}
+  .footer__container {
+    padding-bottom: 80px;
+  }
  }
+
+
+ @media (max-width: 650px) {
+  .container {
+      padding-right: 32px;
+      padding-left: 32px;
+  }
+  .section-offset {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+  .broadcasts::after {
+    bottom: 197px;
+  }
+  .about-us__people {
+    margin-left: -32px;
+    width: calc(100% + 64px);
+  }
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
+  .swiper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .person__foto {
+    height: 200px;
+  }
+ }
+
+ .air__open {
+  display: none;
+ }
+ @media (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  .fs20 {
+    font-size: 16px;
+  }
+  .fs12 {
+    font-size: 9px;
+  }
+  .btn-big {
+    padding: 15px 44px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.btn-small {
+  padding: 7.5px 29px;
+}
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+  .header-bottom__container {
+    height: 45px;
+  }
+  .topics {
+    display: none;
+  }
+  .air {
+    width: 100%;
+    margin: 0;
+  }
+  /* .air__now {
+    display: none;
+  } */
+.air__open {
+  display: block;
+}
+
+.air__open-icon {
+  fill: var(--primary);
+}
+.air__open-btn {
+  color: var(--primary);
+  border: none;
+  background-color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+}
+.air__early, .air__info {
+  display: block;
+}
+
+.header-bottom__container {
+  position: relative;
+  z-index: 2;
+}
+
+.air__player {
+    position: absolute;
+    margin-left: 0;
+    /* z-index: 1; */
+    top: 46px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 73px;
+    padding-top: 9px;
+    padding-left: 2px;
+    transition: 0.5s;
+    transform: translateY(-73px);
+    background-color: red;
+}
+.air__player.is-show {
+    transform: none;
+    z-index: 5;
+}
+
+.is-open {
+  padding: 61px 32px;
+}
+.is-open .nav__list {
+  width: 250px;
+  height: 140px;
+  justify-content: end;
+}
+.is-open .nav__item {
+margin-bottom: 40px;
+}
+
+.hero__container  {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.hero__title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.hero__text {
+  line-height: 21px;
+}
+
+.podcasts__item {
+  flex: 1 1 256px;
+  height: 185px;
+  }
+  .podcast {
+    flex-direction: column;
+  }
+  .podcast__foto {
+    height: 72px;
+  }
+  .podcast__foto img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .podcast__date {
+    bottom: auto;
+    top: 0;
+}
+.podcast__info{
+  width: 100%;
+  height: 113px;
+}
+.podcast__desc {
+  padding: 16px;
+  align-items: center;
+}
+.podcast__time {
+  margin-bottom: 6px;
+}
+.podcast__autor{
+ font-size: 12px;
+}
+.podcast__play {
+  padding-top: 0;
+  width: 36px;
+  height: 36px;
+}
+.podcast__play-icon {
+  width: 36px;
+  height: 36px;
+}
+.podcast__action {
+  gap: 30px;
+  padding: 5px 34px;
+}
+.action__num {
+  font-size: 12px;
+}
+.podcasts__list {
+  margin-bottom: 30px;
+}
+.podcasts__btn {
+  padding: 15px 28px;
+}
+
+.select__subtitle {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.broadcasts__cards {
+  padding-top: 0;
+}
+.card {
+  flex: 1 1 113px;
+}
+
+.card__img {
+  height: 50px;
+}
+.card__info {
+  height: 112px;
+  padding: 10px 0 12px 10px;
+}
+.card__title {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.card__link {
+  font-size: 12px;
+}
+.broadcasts__cards {
+  margin-bottom: 30px;
+}
+.broadcasts {
+  padding-bottom: 30px;
+}
+
+
+.broadcasts__archive {
+  max-width: 256px;
+  max-height: 105px;
+}
+.archive__img {
+  margin-right: 13px;
+  width: 77px;
+  height: 105px;
+}
+.archive__desc {
+  line-height: 21px;
+  width: 166px;
+height: 63px;
+margin-bottom: 7px;
+}
+.archive__link {
+  order: 3;
+  margin-bottom: 0;
+  width: 110px;
+height: 35px;
+}
+.broadcasts::after {
+  bottom: 165px;
+}
+
+.guests__title {
+  margin-bottom: 12px;
+}
+.guests__subtitle {
+  font-size: 14px;
+  line-height: 21px;
+}
+.guests__text {
+  font-size: 14px;
+  line-height: 22.4px;
+  margin-bottom: 30px;
+}
+.ac .ac-trigger {
+  padding: 10px 2px 10px 0;
+}
+.category__header {
+  height: 53px;
+}
+.category__icon {
+  width: 30px;
+    height: 30px;
+}
+}
