@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+  scroll()
   showMorePodcasts()
   showGuestInfo()
   openMenu()
@@ -11,6 +12,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
 })
 
+function scroll () {
+  const smoothLinks = document.querySelectorAll('.nav-link');
+  for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(`${id}`).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+}
 function openLogin() {
   document.querySelector('#login').addEventListener('click', () => {
     document.querySelector('#modal').style.display = 'block'
@@ -40,23 +56,18 @@ function showMorePodcasts() {
 }
 
 function openMenu() {
-  if (document.documentElement.clientWidth <= 500) {
     document.querySelector('#burger').addEventListener('click', () => {
       document.querySelector('#menu').classList.add('menu-open')
+      if (document.documentElement.clientWidth <= 500) {
       document.querySelector('#topics').classList.add('topics-open')
-    })
+    }
+  })
     document.querySelector('#close').addEventListener('click', function () {
       document.querySelector('#menu').classList.remove('menu-open')
+      if (document.documentElement.clientWidth <= 500) {
       document.querySelector('#topics').classList.remove('topics-open')
-    })
-  } else {
-    document.querySelector('#burger').addEventListener('click', () => {
-      document.querySelector('#menu').classList.add('menu-open')
-    })
-    document.querySelector('#close').addEventListener('click', function () {
-      document.querySelector('#menu').classList.remove('menu-open')
-    })
-  }
+    }
+  })
 }
 
 function openAir() {
@@ -90,6 +101,13 @@ function showGuestInfo() {
         socialLinks[2].setAttribute("href", item.dataset.links.split(', ')[2])
 
         document.querySelector('.guest__link').setAttribute("href", item.dataset.radio)
+      }
+
+      if (document.documentElement.clientWidth <= 500) {
+        document.querySelector('#guest').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+      });
       }
     })
   })
