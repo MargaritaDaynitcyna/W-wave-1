@@ -12,21 +12,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
 })
 
-function scroll () {
+function scroll() {
   const smoothLinks = document.querySelectorAll('.nav-link');
   for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
+      e.preventDefault();
+      const id = smoothLink.getAttribute('href');
 
-        document.querySelector(`${id}`).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
-
+      document.querySelector(`${id}`).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
 }
+
 function openLogin() {
   document.querySelector('#login').addEventListener('click', () => {
     document.querySelector('#modal').style.display = 'block'
@@ -56,15 +56,15 @@ function showMorePodcasts() {
 }
 
 function openMenu() {
-    document.querySelector('#burger').addEventListener('click', () => {
-      document.querySelector('#menu').classList.add('menu-open')
-      if (document.documentElement.clientWidth <= 500) {
+  document.querySelector('#burger').addEventListener('click', () => {
+    document.querySelector('#menu').classList.add('menu-open')
+    if (document.documentElement.clientWidth <= 500) {
       document.querySelector('#topics').classList.add('topics-open')
     }
   })
-    document.querySelector('#close').addEventListener('click', function () {
-      document.querySelector('#menu').classList.remove('menu-open')
-      if (document.documentElement.clientWidth <= 500) {
+  document.querySelector('#close').addEventListener('click', function () {
+    document.querySelector('#menu').classList.remove('menu-open')
+    if (document.documentElement.clientWidth <= 500) {
       document.querySelector('#topics').classList.remove('topics-open')
     }
   })
@@ -107,7 +107,7 @@ function showGuestInfo() {
         document.querySelector('#guest').scrollIntoView({
           behavior: 'smooth',
           block: 'start'
-      });
+        });
       }
     })
   })
